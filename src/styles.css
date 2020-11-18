@@ -2,4 +2,9 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-snap-type: y proximity;
+}
+
+body {
+  margin: 0;
 }
