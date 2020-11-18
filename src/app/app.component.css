@@ -1,7 +1,7 @@
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 200px; /* Set the width of the sidebar */
+  width: 25vw; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -59,11 +59,43 @@
 }
 
 main {
-  margin-left: 200px; /* Same as the width of the sidebar */
+  margin-left: 25vw; /* Same as the width of the sidebar */
   /*padding: 20px;*/
+  width: 75vw;
 }
 
 p {
-  padding: 20px;
-  margin: 20px
+
+}
+
+.scroll-cont {
+  height: 100vh;
+}
+
+.horiz-scroll {
+  /*padding: 20px;*/
+  background: indianred;
+  width: 100vh;
+  height: 75vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform:rotate(-90deg) translateY(-100vh);
+  //transform:rotate(90deg);
+  transform-origin: right top;
+}
+.horiz-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+.horiz-scroll > div {
+  width:100vh;
+  height:100vh;
+  margin:10px;
+
+  display:block;
+  //padding:5px;
+  background:#cab;
+  transform:rotate(90deg) translateX(100vh) translateY(15px);
+  transform-origin: right top;
 }

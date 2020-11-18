@@ -20,12 +20,24 @@
 </div>
 
 <main class="app">
-  <div #home id="first" class="home">
-    <p>
-      home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
-    </p>
+  <div class="scroll-cont">
+    <div #home id="first" class="home horiz-scroll">
+      <div class="slide">
+        home1. | offset: {{ homeOffset }}
+      </div>
+      <div class="slide">
+        home2. | offset: {{ homeOffset }}
+      </div>
+      <div class="slide">
+        home3. | offset: {{ homeOffset }}
+      </div>
+      <div class="slide">
+        home4. | offset: {{ homeOffset }}
+      </div>
+      <div class="slide">
+        home5. | offset: {{ homeOffset }}
+      </div>
+    </div>
   </div>
   <div #about id="about" class="about">
     <p>
