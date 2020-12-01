@@ -1,68 +1,45 @@
-<div class="sidenav">
-  <div class="container vert-center">
-    <h1> KEVIN GU </h1>
-    <h2>
-      <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
-    </h2>
-    <h2>
-      <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 3}"> engineer </a>
-    </h2>
-    <h2>
-      <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 4}">interests </a>
-    </h2>
-    <h2>
-      <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
-    </h2>
-    <h2>
-      <a href="#gallery" (click)="print()" [ngClass]="{'active': currentActive === 6}">gallery</a>
-    </h2>
-  </div>
-</div>
+
 
 <main class="app">
-  <div class="scroll-cont">
-    <div #home id="first" class="home section">
-      <p>
-        home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-        .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-        .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
-      </p>
+  <div #home id="first" class="home section">
+    <img class="portrait" src="assets/portrait.jpg"
+         style="height: 75vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 10vw" alt="headshot">
+    <!--    <p>-->
+    <!--      home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+    <!--    </p>-->
+  </div>
+
+
+  <div class="sidenav" [ngStyle]="{'opacity': fadeLevel}">
+    <div class="container vert-center">
+      <h1> KEVIN GU </h1>
+      <h2>
+        <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
+      </h2>
+      <h2>
+        <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 3}"> engineer </a>
+      </h2>
+      <h2>
+        <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 4}">interests </a>
+      </h2>
+      <h2>
+        <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
+      </h2>
+      <h2>
+        <a href="#gallery" (click)="print()" [ngClass]="{'active': currentActive === 6}">gallery</a>
+      </h2>
     </div>
   </div>
-  <div class="scroll-cont">
-    <div #about id="about" class="about section horiz-scroll">
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-      <div class="slide">
-        about1
-      </div>
-    </div>
+
+
+  <div #about id="about" class="about section horiz-scroll">
+    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
   </div>
+
   <div #eng id="engineer" class="engineer section">
     <p>
       engineer. | offset: {{ engOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>

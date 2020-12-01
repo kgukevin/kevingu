@@ -9,6 +9,7 @@
   /*background-color: #111; !* Black *!*/
   overflow-x: hidden; /* Disable horizontal scroll */
   /*padding-top: 20px;*/
+
 }
 
 /* The navigation menu links */
@@ -48,6 +49,10 @@
   font-size: 1.2rem !important;
 }
 
+.close {
+  opacity: .2;
+}
+
 .vert-center {
   /*margin-top: 50%;*/
   /*margin-bottom: 50%;*/
@@ -59,9 +64,9 @@
 }
 
 main {
-  margin-left: 25vw; /* Same as the width of the sidebar */
+   /* Same as the width of the sidebar */
   /*padding: 20px;*/
-  width: 75vw;
+  //width: 75vw;
 }
 
 p {
@@ -69,44 +74,11 @@ p {
 }
 
 .section {
+  /*margin: 100px;*/
+  margin-left: 25vw;
   height: 100vh;
   width: 75vw;
   scroll-snap-align: start;
-  overflow: auto;
+  overflow: hidden;
   overscroll-behavior: none;
 }
-
-.scroll-cont {
-  height: 100vh;
-  width: 75vw;
-  background: navajowhite;
-}
-
-.horiz-scroll {
-  /*padding: 20px;*/
-  background: indianred;
-  width: 100vh;
-  height: 75vw;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-100vh);
-  transform-origin: right top;
-  overscroll-behavior: none;
-}
-
-.horiz-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-
-.horiz-scroll > div {
-  width: 100vh;
-  height: 100vh;
-  margin: 10px;
-
-  display: block;
-  background: #cab;
-  transform: rotate(90deg) translateX(100vh) translateY(15px);
-  transform-origin: right top;
-}
-
