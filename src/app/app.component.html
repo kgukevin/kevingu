@@ -1,36 +1,39 @@
-
+<div class="sidenav" [ngStyle]="{'opacity': fadeLevel}">
+  <div class="container vert-center">
+    <h1> KEVIN GU </h1>
+    <h2>
+      <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
+    </h2>
+    <h2>
+      <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 3}"> engineer </a>
+    </h2>
+    <h2>
+      <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 4}">interests </a>
+    </h2>
+    <h2>
+      <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
+    </h2>
+    <h2>
+      <a href="#gallery" (click)="print()" [ngClass]="{'active': currentActive === 6}">gallery</a>
+    </h2>
+  </div>
+</div>
 
 <main class="app">
-  <div #home id="first" class="home section">
-    <img class="portrait" src="assets/portrait.jpg"
-         style="height: 75vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 10vw" alt="headshot">
-    <!--    <p>-->
-    <!--      home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-    <!--    </p>-->
-  </div>
+  <div #home id="first" class="home section" [ngStyle]="{'opacity': 1-fadeLevel}">
 
-
-  <div class="sidenav" [ngStyle]="{'opacity': fadeLevel}">
-    <div class="container vert-center">
-      <h1> KEVIN GU </h1>
-      <h2>
-        <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
-      </h2>
-      <h2>
-        <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 3}"> engineer </a>
-      </h2>
-      <h2>
-        <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 4}">interests </a>
-      </h2>
-      <h2>
-        <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
-      </h2>
-      <h2>
-        <a href="#gallery" (click)="print()" [ngClass]="{'active': currentActive === 6}">gallery</a>
-      </h2>
+    <div style="height: 100vh">
+      <h1 class="vert-center" style="color: #818181; z-index: 5">the name's kevin</h1>
+      <img class="portrait" src="assets/portrait.jpg"
+           style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 10vw;  -webkit-mask-image: -webkit-gradient(linear, left center,left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));"
+           alt="headshot of a strapping young man" >
     </div>
+    <!--      <p>-->
+    <!--          home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--          .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--          .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+    <!--        </p>-->
+
   </div>
 
 

@@ -49,17 +49,13 @@
   font-size: 1.2rem !important;
 }
 
-.close {
-  opacity: .2;
-}
-
 .vert-center {
-  /*margin-top: 50%;*/
+  margin-top: 50vh;
   /*margin-bottom: 50%;*/
   /*!*margin: 50%;*!*/
   position: absolute;
-  top: 50%;
-  -ms-transform: translateY(50%);
+  //top: 50%;
+  //-ms-transform: translateY(50%);
   transform: translateY(-50%);
 }
 
@@ -76,9 +72,10 @@ p {
 .section {
   /*margin: 100px;*/
   margin-left: 25vw;
-  height: 100vh;
+  //height: 100vh;
+  height: auto;
   width: 75vw;
   scroll-snap-align: start;
   overflow: hidden;
-  overscroll-behavior: none;
+  overscroll-behavior: auto;
 }
