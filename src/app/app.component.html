@@ -1,4 +1,4 @@
-<div class="sidenav" [ngStyle]="{'opacity': fadeLevel}">
+<div class="sidenav" [ngStyle]="{'opacity': titleFade}">
   <div class="container vert-center">
     <!--    <h1> KEVIN GU </h1>-->
     <h2>
@@ -20,39 +20,40 @@
 </div>
 
 <main class="app">
-  <div class="bg-gradient" [ngStyle]="{'opacity': 1-fadeLevel}">
-    <div id="stars">
-      ::after
-    </div>
-      <div #home id="first" class="home section">
+  <div class="bg-gradient" [ngStyle]="{'opacity': 1-titleFade}">
+    <!--    <div id="stars"></div>-->
+    <div #home id="first" class="home section">
 
-        <div style="height: 100vh">
-          <div class="vert-center">
-            <h1 style="transform: translateX(-50px)">kevin gu</h1>
-          </div>
-
-          <div class="typewriter vert-center">
-            <h2 class="" style="transform: translateY(50px) translateX(-250px)"> student | athlete | software engineer |
-              web developer </h2>
-          </div>
-
-          <img class="portrait" src="assets/portrait.png"
-               style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 10vw; mask: -webkit-gradient(linear, left 75%,left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));"
-               alt="headshot of a strapping young man">
+      <div style="height: 100vh">
+        <div class="vert-center">
+          <h1 style="transform: translateX(450px) translateY(100px)">kevin gu</h1>
         </div>
-        <!--      <p>-->
-        <!--          home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--          .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--          .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-        <!--        </p>-->
+
+        <div class="typewriter vert-center">
+          <h2 class="" style="transform: translateX(275px) translateY(150px)">  student | athlete | computer scientist | engineer</h2>
+        </div>
+
+        <!--        <img class="portrait" src="assets/portrait.png"-->
+        <!--             style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 5vw;"-->
+        <!--             alt="headshot of a strapping young man">-->
+
+
       </div>
+    </div>
 
   </div>
 
   <div #about id="about" class="about section horiz-scroll">
-    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+    <!--    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+    <div style="height: 100vh">
+      <div class="vert-center">
+        <h1>who's kevin?</h1>
+        <h2>by now, you probably already know a kevin. most likely a few.</h2>
+      </div>
+    </div>
+
   </div>
 
   <div #eng id="engineer" class="engineer section">
