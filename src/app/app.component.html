@@ -1,4 +1,4 @@
-<div class="sidenav" [ngStyle]="{'opacity': fadeLevel}">
+<div class="sidenav" [ngStyle]="{'opacity': titleFade}">
   <div class="container vert-center">
     <!--    <h1> KEVIN GU </h1>-->
     <h2>
@@ -20,37 +20,69 @@
 </div>
 
 <main class="app">
-  <div class="bg-gradient" [ngStyle]="{'opacity': 1-fadeLevel}">
-    <div id="stars"></div>
-      <div #home id="first" class="home section">
+  <div class="bg-gradient" [ngStyle]="{'opacity': 1-titleFade}">
+    <!--    <div id="stars"></div>-->
+    <div #home id="first" class="home section">
 
-        <div style="height: 100vh">
-          <div class="vert-center">
-            <h1 style="transform: translateX(-50px)">kevin gu</h1>
-          </div>
-
-          <div class="typewriter vert-center">
-            <h2 class="" style="transform: translateY(50px) translateX(-250px)"> student | athlete | software engineer |
-              web developer </h2>
-          </div>
-
-          <img class="portrait" src="assets/portrait.png"
-               style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 10vw; mask: -webkit-gradient(linear, left 75%,left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));"
-               alt="headshot of a strapping young man">
+      <div style="height: 100vh">
+        <div class="topnav" style="margin-top: 2vh">
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#about">about</a></h2>
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineer</a></h2>
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#interests">interests</a></h2>
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#portfolio">portfolio</a></h2>
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#gallery">gallery</a></h2>
         </div>
-        <!--      <p>-->
-        <!--          home. | offset: {{ homeOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--          .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--          .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-        <!--        </p>-->
+
+        <div style="position: absolute; right: 300px; bottom: 25vh">
+          <h1>kevin gu</h1>
+        </div>
+
+        <div class="typewriter" style="position: absolute; right: 125px; bottom: 20vh">
+          <h2>student | athlete | computer scientist | engineer</h2>
+        </div>
+
+        <!--        <img class="portrait" src="assets/portrait.png"-->
+        <!--             style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 5vw;"-->
+        <!--             alt="headshot of a strapping young man">-->
+
+
       </div>
+    </div>
 
   </div>
 
   <div #about id="about" class="about section horiz-scroll">
-    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+    <!--    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+    <div style="height: 100vh">
+      <div class="vert-center">
+        <h1>who's kevin?</h1>
+        <div class="rw-words" style="width: 50vw">
+          <h2>by now, you probably already know a kevin. most likely a <b
+            style="color: orange">few</b>.
+          </h2>
+          <h2>here's a few <b
+            style="color: orange">fun facts</b> about this one.
+          </h2>
+          <h2>
+            my upbringing instilled in me a significant admiration of nature,
+          </h2>
+          <h2>and a considerable curiosity in all things STEM. <br> learn a few things about this one by <b
+            style="color: orange">scrolling down</b></h2>
+          <h2>
+            being athletic with a considerable admiration of the great outdoors and greatly intrigued by most things
+            STEM, i seem to get the best of both stereotypes.
+          </h2>
+          <h2>by now, you probably already know a kevin. most likely a few. <br> learn a few things about this one by <b
+            style="color: orange">scrolling down</b></h2>
+          <h2>
+
+          </h2>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div #eng id="engineer" class="engineer section">

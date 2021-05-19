@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('port') portElement: ElementRef;
   @ViewChild('gall') gallElement: ElementRef;
 
-  public fadeLevel = 0;
+  public titleFade = 0;
 
   public currentActive = 0;
   public homeOffset: number = null;
@@ -58,13 +58,13 @@ export class AppComponent implements AfterViewInit {
     }
 
     if (window.pageYOffset <= this.aboutOffset / 2){
-      this.fadeLevel = 0;
+      this.titleFade = 0;
     }
     if (window.pageYOffset >= this.aboutOffset) {
-      this.fadeLevel = 1;
+      this.titleFade = 1;
     }
     else {
-      this.fadeLevel = window.pageYOffset / this.aboutOffset;
+      this.titleFade = window.pageYOffset / this.aboutOffset;
     }
   }
 
