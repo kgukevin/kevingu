@@ -19,7 +19,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('gall') gallElement: ElementRef;
 
   public titleFade = 0;
-
+  public scrollPoint: number = null;
   public currentActive = 0;
   public homeOffset: number = null;
   public aboutOffset: number = null;
@@ -30,6 +30,7 @@ export class AppComponent implements AfterViewInit {
 
 
   ngAfterViewInit(): void {
+    this.scrollPoint = window.pageYOffset;
     this.homeOffset = this.homeElement.nativeElement.offsetTop - 100;
     this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 100;
     this.engOffset = this.engElement.nativeElement.offsetTop - 100;
@@ -57,7 +58,7 @@ export class AppComponent implements AfterViewInit {
       this.currentActive = 0;
     }
 
-    if (window.pageYOffset <= this.aboutOffset / 2){
+    if (window.pageYOffset <= this.aboutOffset){
       this.titleFade = 0;
     }
     if (window.pageYOffset >= this.aboutOffset) {

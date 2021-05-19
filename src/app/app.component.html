@@ -1,4 +1,4 @@
-<div class="sidenav" [ngStyle]="{'opacity': titleFade}">
+<div class="sidenav" style="transform: translateX(-100%);" [ngStyle]="{'opacity': titleFade, 'transform': 'translateX('+20*titleFade+'%)'}">
   <div class="container vert-center">
     <!--    <h1> KEVIN GU </h1>-->
     <h2>
@@ -20,26 +20,31 @@
 </div>
 
 <main class="app">
-  <div class="bg-gradient" [ngStyle]="{'opacity': 1-titleFade}">
+  <div [ngStyle]="{'opacity': 1-titleFade}"> <!-- set class="bg-gradient" for gradient -->
     <!--    <div id="stars"></div>-->
-    <div #home id="first" class="home section">
+    <div #home id="first" class="home section" style="transform: translateX(-25vw); text-align: center; width: 100vw">
 
       <div style="height: 100vh">
-        <div class="topnav" style="margin-top: 2vh">
+        <div class="topnav" style="margin-top: 2vh; width: 100vw">
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#about">about</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineer</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#interests">interests</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#portfolio">portfolio</a></h2>
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#gallery">gallery</a></h2>
+          <h2 style="display: inline-block; padding-left: 0;"><a href="#gallery">gallery</a></h2>
         </div>
+<!--        <div style="">-->
+          <div class="vert-center" style="width: 100%">
+            <div style="text-align: center">
+              <h1>kevin <b style="color: orange">gu</b></h1>
+            </div>
 
-        <div style="position: absolute; right: 300px; bottom: 25vh">
-          <h1>kevin gu</h1>
-        </div>
-
-        <div class="typewriter" style="position: absolute; right: 125px; bottom: 20vh">
-          <h2>student | athlete | computer scientist | engineer</h2>
-        </div>
+            <div style="max-width: fit-content; margin: auto">
+              <div class="typewriter" style=" text-align: center; width: 100%">
+                <h2>student | athlete | computer scientist | engineer</h2>
+              </div>
+            </div>
+          </div>
+<!--        </div>-->
 
         <!--        <img class="portrait" src="assets/portrait.png"-->
         <!--             style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 5vw;"-->
@@ -58,28 +63,41 @@
     <div style="height: 100vh">
       <div class="vert-center">
         <h1>who's kevin?</h1>
-        <div class="rw-words" style="width: 50vw">
-          <h2>by now, you probably already know a kevin. most likely a <b
-            style="color: orange">few</b>.
-          </h2>
-          <h2>here's a few <b
-            style="color: orange">fun facts</b> about this one.
-          </h2>
-          <h2>
-            my upbringing instilled in me a significant admiration of nature,
-          </h2>
-          <h2>and a considerable curiosity in all things STEM. <br> learn a few things about this one by <b
-            style="color: orange">scrolling down</b></h2>
-          <h2>
-            being athletic with a considerable admiration of the great outdoors and greatly intrigued by most things
-            STEM, i seem to get the best of both stereotypes.
-          </h2>
-          <h2>by now, you probably already know a kevin. most likely a few. <br> learn a few things about this one by <b
-            style="color: orange">scrolling down</b></h2>
-          <h2>
+<!--        <div [ngClass]="{'rw-words': currentActive === 2, 'rw-words-empty': currentActive !== 2}" style="width: 50vw">-->
+<!--          <h2>by now, you probably already know a kevin. most likely a <b-->
+<!--            style="color: orange">few</b>.-->
+<!--          </h2>-->
+<!--          <h2>here's a few <b-->
+<!--            style="color: orange">fun facts</b> about this one.-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            i can get interested in almost anything.-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            i have an obsession with <b style="color: orange">bikes</b> and their mechanics.-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            my favorite show is <b style="color: orange">Yellowstone</b>.-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            sometimes, i take some cool photos - mostly with my iPhone-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            i love doing yardwork, landscaping, and home improvement.-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            i am having a hard time finding time to practice violin.-->
+<!--          </h2>-->
+<!--          <h2>-->
+<!--            <b style="color: orange">"Good News"</b> by Mac Miller is my favorite bop.-->
+<!--          </h2>-->
 
-          </h2>
-        </div>
+<!--          <h2>-->
+<!--            learn more by <b style="color: orange">scrolling down</b></h2>-->
+<!--          <h2>-->
+
+<!--          </h2>-->
+<!--        </div>-->
       </div>
     </div>
 
@@ -107,10 +125,47 @@
     </p>
   </div>
   <div #gall id="gallery" class="gallery section">
-    <p>
-      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
-    </p>
+<!--    <p>-->
+<!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+<!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+<!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+<!--    </p>-->
+    <div class="row">
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+      </div>
+    </div>
+
   </div>
 </main>
