@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, HostListener, ViewChild} from '@angular/core';
-
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,13 +8,14 @@ import {AfterViewInit, Component, ElementRef, HostListener, ViewChild} from '@an
 export class AppComponent implements AfterViewInit {
   constructor() {
   }
+  faGithub = faGithub;
 
   title = 'kevingu';
 
   @ViewChild('home') homeElement: ElementRef;
   @ViewChild('about') aboutElement: ElementRef;
-  @ViewChild('eng') engElement: ElementRef;
   @ViewChild('int') intElement: ElementRef;
+  @ViewChild('eng') engElement: ElementRef;
   @ViewChild('port') portElement: ElementRef;
   @ViewChild('gall') gallElement: ElementRef;
 
@@ -23,8 +24,8 @@ export class AppComponent implements AfterViewInit {
   public currentActive = 0;
   public homeOffset: number = null;
   public aboutOffset: number = null;
-  public engOffset: number = null;
   public intOffset: number = null;
+  public engOffset: number = null;
   public portOffset: number = null;
   public gallOffset: number = null;
 
@@ -33,8 +34,8 @@ export class AppComponent implements AfterViewInit {
     this.scrollPoint = window.pageYOffset;
     this.homeOffset = this.homeElement.nativeElement.offsetTop - 100;
     this.aboutOffset = this.aboutElement.nativeElement.offsetTop - 100;
-    this.engOffset = this.engElement.nativeElement.offsetTop - 100;
     this.intOffset = this.intElement.nativeElement.offsetTop - 100;
+    this.engOffset = this.engElement.nativeElement.offsetTop - 100;
     this.portOffset = this.portElement.nativeElement.offsetTop - 100;
     this.gallOffset = this.gallElement.nativeElement.offsetTop - 100;
 
@@ -44,11 +45,11 @@ export class AppComponent implements AfterViewInit {
   checkOffsetTop(): void {
     if (window.pageYOffset >= this.homeOffset && window.pageYOffset <= this.aboutOffset) {
       this.currentActive = 1;
-    } else if (window.pageYOffset > this.aboutOffset && window.pageYOffset < this.engOffset) {
+    } else if (window.pageYOffset > this.aboutOffset && window.pageYOffset < this.intOffset) {
       this.currentActive = 2;
-    } else if (window.pageYOffset >= this.engOffset && window.pageYOffset < this.intOffset) {
+    } else if (window.pageYOffset >= this.intOffset && window.pageYOffset < this.engOffset) {
       this.currentActive = 3;
-    } else if (window.pageYOffset >= this.intOffset && window.pageYOffset < this.portOffset) {
+    } else if (window.pageYOffset >= this.engOffset && window.pageYOffset < this.portOffset) {
       this.currentActive = 4;
     } else if (window.pageYOffset >= this.portOffset && window.pageYOffset < this.gallOffset) {
       this.currentActive = 5;

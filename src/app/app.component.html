@@ -1,14 +1,15 @@
-<div class="sidenav" style="transform: translateX(-100%);" [ngStyle]="{'opacity': titleFade, 'transform': 'translateX('+20*titleFade+'%)'}">
+<div class="sidenav" style="transform: translateX(-100%);"
+     [ngStyle]="{'opacity': titleFade, 'transform': 'translateX('+20*titleFade+'%)'}">
   <div class="container vert-center">
     <!--    <h1> KEVIN GU </h1>-->
     <h2>
       <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
     </h2>
     <h2>
-      <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 3}"> engineer </a>
+      <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 3}">interests </a>
     </h2>
     <h2>
-      <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 4}">interests </a>
+      <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 4}"> engineer </a>
     </h2>
     <h2>
       <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
@@ -27,24 +28,24 @@
       <div style="height: 100vh">
         <div class="topnav" style="margin-top: 2vh; width: 100vw">
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#about">about</a></h2>
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineer</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#interests">interests</a></h2>
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineer</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#portfolio">portfolio</a></h2>
           <h2 style="display: inline-block; padding-left: 0;"><a href="#gallery">gallery</a></h2>
         </div>
-<!--        <div style="">-->
-          <div class="vert-center" style="width: 100%">
-            <div style="text-align: center">
-              <h1>kevin <b style="color: orange">gu</b></h1>
-            </div>
+        <!--        <div style="">-->
+        <div class="vert-center" style="width: 100%">
+          <div style="text-align: center">
+            <h1>kevin <b style="color: orange">gu</b></h1>
+          </div>
 
-            <div style="max-width: fit-content; margin: auto">
-              <div class="typewriter" style=" text-align: center; width: 100%">
-                <h2>student | athlete | computer scientist | engineer</h2>
-              </div>
+          <div style="max-width: fit-content; margin: auto">
+            <div class="typewriter" style=" text-align: center; width: 100%">
+              <h2>student | athlete | computer scientist | engineer</h2>
             </div>
           </div>
-<!--        </div>-->
+        </div>
+        <!--        </div>-->
 
         <!--        <img class="portrait" src="assets/portrait.png"-->
         <!--             style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 5vw;"-->
@@ -62,54 +63,54 @@
     <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
     <div style="height: 100vh">
       <div class="vert-center">
-        <h1>who's kevin?</h1>
-<!--        <div [ngClass]="{'rw-words': currentActive === 2, 'rw-words-empty': currentActive !== 2}" style="width: 50vw">-->
-<!--          <h2>by now, you probably already know a kevin. most likely a <b-->
-<!--            style="color: orange">few</b>.-->
-<!--          </h2>-->
-<!--          <h2>here's a few <b-->
-<!--            style="color: orange">fun facts</b> about this one.-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            i can get interested in almost anything.-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            i have an obsession with <b style="color: orange">bikes</b> and their mechanics.-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            my favorite show is <b style="color: orange">Yellowstone</b>.-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            sometimes, i take some cool photos - mostly with my iPhone-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            i love doing yardwork, landscaping, and home improvement.-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            i am having a hard time finding time to practice violin.-->
-<!--          </h2>-->
-<!--          <h2>-->
-<!--            <b style="color: orange">"Good News"</b> by Mac Miller is my favorite bop.-->
-<!--          </h2>-->
+        <h1 style="margin-bottom: .5em">who's kevin?</h1>
+        <h2>by now, you probably already know a Kevin. most likely a few.</h2>
+        <h2>this one was born and raised in the suburbs of Northern Virginia.</h2>
+        <h2>they instilled within him values of authenticity and compassion.</h2>
+        <h2>with these values, he's navigated through one of the most competitive high schools in the country.</h2>
+        <h2>now, he studies computer science at the University of Illinois at Urbana-Champaign.</h2>
+        <h2>he is incredibly grateful to everything and everyone he has experienced and met thus far,</h2>
+        <h2>and he hopes that the future can bring </h2>
+        <!--        <div [ngClass]="{'rw-words': currentActive === 2, 'rw-words-empty': currentActive !== 2}" style="width: 50vw">-->
+        <!--          <h2>by now, you probably already know a kevin. most likely a <b-->
+        <!--            style="color: orange">few</b>.-->
+        <!--          </h2>-->
+        <!--          <h2>here's a few <b-->
+        <!--            style="color: orange">fun facts</b> about this one.-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            i can get interested in almost anything.-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            i have an obsession with <b style="color: orange">bikes</b> and their mechanics.-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            my favorite show is <b style="color: orange">Yellowstone</b>.-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            sometimes, i take some cool photos - mostly with my iPhone-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            i love doing yardwork, landscaping, and home improvement.-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            i am having a hard time finding time to practice violin.-->
+        <!--          </h2>-->
+        <!--          <h2>-->
+        <!--            <b style="color: orange">"Good News"</b> by Mac Miller is my favorite bop.-->
+        <!--          </h2>-->
 
-<!--          <h2>-->
-<!--            learn more by <b style="color: orange">scrolling down</b></h2>-->
-<!--          <h2>-->
+        <!--          <h2>-->
+        <!--            learn more by <b style="color: orange">scrolling down</b></h2>-->
+        <!--          <h2>-->
 
-<!--          </h2>-->
-<!--        </div>-->
+        <!--          </h2>-->
+        <!--        </div>-->
       </div>
     </div>
 
   </div>
 
-  <div #eng id="engineer" class="engineer section">
-    <p>
-      engineer. | offset: {{ engOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
-    </p>
-  </div>
   <div #int id="interests" class="interests section">
     <p>
       interests. | offset: {{ intOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
@@ -117,19 +118,116 @@
       .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
     </p>
   </div>
-  <div #port id="portfolio" class="portfolio section">
+  <div #eng id="engineer" class="engineer section">
     <p>
-      portfolio. | offset: {{ portOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+      engineer. | offset: {{ engOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
       .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
       .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
     </p>
   </div>
+  <div #port id="portfolio" class="portfolio section">
+    <h1 style="margin-bottom: .5em">recent projects</h1>
+    <div class="git-container" style="display: block">
+      <div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+              <div class="card-body"><h3 class="card-title">home </h3>
+                <p class="card-text">Personal Website </p><a
+                  href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip" class="btn btn-outline-secondary mr-3">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+                  Clone Project</a><a href="https://github.com/kgukevin/kevingu"
+                                      target=" _blank" class="btn btn-outline-secondary">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+                  Repo</a>
+                <hr>
+                <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                href="https://github.com/kgukevin/kevingu/search?l=css"
+                                                target=" _blank">CSS: 63.0 %</a><a
+                  class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
+                  target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
+                                                      href="https://github.com/kgukevin/kevingu/search?l=html"
+                                                      target=" _blank">HTML: 16.0 %</a></div>
+                <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
+                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
+                  [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                  class="text-muted">Updated on June 4, 2021</small></p>
+              </div>
+            </div>
+          </div>
+          <!--          <div class="col-md-6">-->
+          <!--            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">-->
+          <!--              <div class="card-body"><h5 class="card-title">alanli2001.github.io </h5>-->
+          <!--                <p class="card-text">Host for my personal website. </p><a-->
+          <!--                  href="https://github.com/alanli2001/alanli2001.github.io/archive/master.zip"-->
+          <!--                  class="btn btn-outline-secondary mr-3"><i class="fab fa-github"></i> Clone Project</a><a-->
+          <!--                  href="https://github.com/alanli2001/alanli2001.github.io" target=" _blank"-->
+          <!--                  class="btn btn-outline-secondary"><i class="fab fa-github"></i> Repo</a>-->
+          <!--                <hr>-->
+          <!--                <div class="pb-3">Languages: code yet to be deployed.</div>-->
+          <!--                <p class="card-text"><a href="https://github.com/alanli2001/alanli2001.github.io/stargazers"-->
+          <!--                                        target=" _blank" class="text-dark text-decoration-none"><span-->
+          <!--                  class="text-dark card-link mr-4"><i class="fab fa-github"></i> Stars <span-->
+          <!--                  class="badge badge-dark">0</span></span></a><small class="text-muted">Updated on February 23,-->
+          <!--                  2021</small></p></div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class="col-md-6">-->
+          <!--            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">-->
+          <!--              <div class="card-body"><h5 class="card-title">Approximate-Index </h5>-->
+          <!--                <p class="card-text">Approximates behavior of selected indices with stock data. </p><a-->
+          <!--                  href="https://github.com/alanli2001/Approximate-Index/archive/master.zip"-->
+          <!--                  class="btn btn-outline-secondary mr-3"><i class="fab fa-github"></i> Clone Project</a><a-->
+          <!--                  href="https://github.com/alanli2001/Approximate-Index" target=" _blank"-->
+          <!--                  class="btn btn-outline-secondary"><i class="fab fa-github"></i> Repo</a>-->
+          <!--                <hr>-->
+          <!--                <div class="pb-3">Languages: <a class="badge badge-light card-link"-->
+          <!--                                                href="https://github.com/alanli2001/Approximate-Index/search?l=Python"-->
+          <!--                                                target=" _blank">Python: 100 %</a></div>-->
+          <!--                <p class="card-text"><a href="https://github.com/alanli2001/Approximate-Index/stargazers"-->
+          <!--                                        target=" _blank" class="text-dark text-decoration-none"><span-->
+          <!--                  class="text-dark card-link mr-4"><i class="fab fa-github"></i> Stars <span-->
+          <!--                  class="badge badge-dark">0</span></span></a><small class="text-muted">Updated on December 5,-->
+          <!--                  2020</small></p></div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class="col-md-6">-->
+          <!--            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">-->
+          <!--              <div class="card-body"><h5 class="card-title">Monopoly </h5>-->
+          <!--                <p class="card-text">Monopoly clone in OCaml </p><a-->
+          <!--                  href="https://github.com/alanli2001/Monopoly/archive/master.zip"-->
+          <!--                  class="btn btn-outline-secondary mr-3"><i class="fab fa-github"></i> Clone Project</a><a-->
+          <!--                  href="https://github.com/alanli2001/Monopoly" target=" _blank" class="btn btn-outline-secondary"><i-->
+          <!--                  class="fab fa-github"></i> Repo</a>-->
+          <!--                <hr>-->
+          <!--                <div class="pb-3">Languages: <a class="badge badge-light card-link"-->
+          <!--                                                href="https://github.com/alanli2001/Monopoly/search?l=OCaml"-->
+          <!--                                                target=" _blank">OCaml: 98.1 %</a><a class="badge badge-light card-link"-->
+          <!--                                                                                     href="https://github.com/alanli2001/Monopoly/search?l=Shell"-->
+          <!--                                                                                     target=" _blank">Shell: 1.2 %</a><a-->
+          <!--                  class="badge badge-light card-link" href="https://github.com/alanli2001/Monopoly/search?l=Makefile"-->
+          <!--                  target=" _blank">Makefile: 0.5 %</a></div>-->
+          <!--                <p class="card-text"><a href="https://github.com/alanli2001/Monopoly/stargazers" target=" _blank"-->
+          <!--                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><i-->
+          <!--                  class="fab fa-github"></i> Stars <span class="badge badge-dark">0</span></span></a><small-->
+          <!--                  class="text-muted">Updated on December 30, 2020</small></p></div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+        </div>
+      </div>
+    </div>
+    <!--    <p>-->
+    <!--      portfolio. | offset: {{ portOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+    <!--    </p>-->
+  </div>
   <div #gall id="gallery" class="gallery section">
-<!--    <p>-->
-<!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-<!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-<!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-<!--    </p>-->
+    <!--    <p>-->
+    <!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+    <!--    </p>-->
     <div class="row">
       <div class="column">
         <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
