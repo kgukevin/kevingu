@@ -64,13 +64,27 @@
     <div style="height: 100vh">
       <div class="vert-center">
         <h1 style="margin-bottom: .5em">who's kevin?</h1>
-        <h2>by now, you probably already know a Kevin. most likely a few.</h2>
-        <h2>this one was born and raised in the suburbs of Northern Virginia.</h2>
-        <h2>they instilled within him values of authenticity and compassion.</h2>
-        <h2>with these values, he's navigated through one of the most competitive high schools in the country.</h2>
-        <h2>now, he studies computer science at the University of Illinois at Urbana-Champaign.</h2>
-        <h2>he is incredibly grateful to everything and everyone he has experienced and met thus far,</h2>
-        <h2>and he hopes that the future can bring </h2>
+        <h2>
+          My parents named me Kevin after becoming a fan of actor Kevin Costner
+          from watching the film adaptation of Dances with the Wolves.
+        </h2>
+        <h2>
+          As a native to the suburbs of Northern Virginia,
+          I grew up in close proximity to humbling natural landscapes and fantastic cityscapes.
+        </h2>
+        <h2>
+          From being allowed to explore the outdoors on my own at a young age,
+          I developed a deep appreciation of nature.
+        </h2>
+        <h2>
+          Being Chinese-American I had the opportunity to experience two cultures and expand my worldview.
+        </h2>
+        <h2>
+          I am an extremely curious person.
+        </h2>
+        <h2>
+
+        </h2>
         <!--        <div [ngClass]="{'rw-words': currentActive === 2, 'rw-words-empty': currentActive !== 2}" style="width: 50vw">-->
         <!--          <h2>by now, you probably already know a kevin. most likely a <b-->
         <!--            style="color: orange">few</b>.-->
@@ -112,11 +126,18 @@
   </div>
 
   <div #int id="interests" class="interests section">
-    <p>
-      interests. | offset: {{ intOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
-    </p>
+    <div style="height: 100vh">
+      <div class="vert-center">
+        <h1>things i like</h1>
+        <h2>for better or for worse, my innate curiosity means i can get interested in anything that catches my
+          eye.</h2>
+        <!--    <p>-->
+        <!--      interests. | offset: {{ intOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+        <!--    </p>-->
+      </div>
+    </div>
   </div>
   <div #eng id="engineer" class="engineer section">
     <p>
@@ -126,15 +147,16 @@
     </p>
   </div>
   <div #port id="portfolio" class="portfolio section">
-    <h1 style="margin-bottom: .5em">recent projects</h1>
+    <h1>recent projects</h1>
     <div class="git-container" style="display: block">
       <div>
         <div class="row">
           <div class="col-md-6">
             <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-              <div class="card-body"><h3 class="card-title">home </h3>
+              <div class="card-body"><h3 class="card-title">kevingu</h3>
                 <p class="card-text">Personal Website </p><a
-                  href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip" class="btn btn-outline-secondary mr-3">
+                  href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
+                  class="btn btn-outline-secondary mr-3">
                   <fa-icon [icon]="faGithub"></fa-icon>
                   Clone Project</a><a href="https://github.com/kgukevin/kevingu"
                                       target=" _blank" class="btn btn-outline-secondary">
@@ -146,8 +168,8 @@
                                                 target=" _blank">CSS: 63.0 %</a><a
                   class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
                   target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
-                                                      href="https://github.com/kgukevin/kevingu/search?l=html"
-                                                      target=" _blank">HTML: 16.0 %</a></div>
+                                                            href="https://github.com/kgukevin/kevingu/search?l=html"
+                                                            target=" _blank">HTML: 16.0 %</a></div>
                 <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
                                         class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
                   [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
@@ -155,64 +177,57 @@
               </div>
             </div>
           </div>
-          <!--          <div class="col-md-6">-->
-          <!--            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">-->
-          <!--              <div class="card-body"><h5 class="card-title">alanli2001.github.io </h5>-->
-          <!--                <p class="card-text">Host for my personal website. </p><a-->
-          <!--                  href="https://github.com/alanli2001/alanli2001.github.io/archive/master.zip"-->
-          <!--                  class="btn btn-outline-secondary mr-3"><i class="fab fa-github"></i> Clone Project</a><a-->
-          <!--                  href="https://github.com/alanli2001/alanli2001.github.io" target=" _blank"-->
-          <!--                  class="btn btn-outline-secondary"><i class="fab fa-github"></i> Repo</a>-->
-          <!--                <hr>-->
-          <!--                <div class="pb-3">Languages: code yet to be deployed.</div>-->
-          <!--                <p class="card-text"><a href="https://github.com/alanli2001/alanli2001.github.io/stargazers"-->
-          <!--                                        target=" _blank" class="text-dark text-decoration-none"><span-->
-          <!--                  class="text-dark card-link mr-4"><i class="fab fa-github"></i> Stars <span-->
-          <!--                  class="badge badge-dark">0</span></span></a><small class="text-muted">Updated on February 23,-->
-          <!--                  2021</small></p></div>-->
-          <!--            </div>-->
-          <!--          </div>-->
-          <!--          <div class="col-md-6">-->
-          <!--            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">-->
-          <!--              <div class="card-body"><h5 class="card-title">Approximate-Index </h5>-->
-          <!--                <p class="card-text">Approximates behavior of selected indices with stock data. </p><a-->
-          <!--                  href="https://github.com/alanli2001/Approximate-Index/archive/master.zip"-->
-          <!--                  class="btn btn-outline-secondary mr-3"><i class="fab fa-github"></i> Clone Project</a><a-->
-          <!--                  href="https://github.com/alanli2001/Approximate-Index" target=" _blank"-->
-          <!--                  class="btn btn-outline-secondary"><i class="fab fa-github"></i> Repo</a>-->
-          <!--                <hr>-->
-          <!--                <div class="pb-3">Languages: <a class="badge badge-light card-link"-->
-          <!--                                                href="https://github.com/alanli2001/Approximate-Index/search?l=Python"-->
-          <!--                                                target=" _blank">Python: 100 %</a></div>-->
-          <!--                <p class="card-text"><a href="https://github.com/alanli2001/Approximate-Index/stargazers"-->
-          <!--                                        target=" _blank" class="text-dark text-decoration-none"><span-->
-          <!--                  class="text-dark card-link mr-4"><i class="fab fa-github"></i> Stars <span-->
-          <!--                  class="badge badge-dark">0</span></span></a><small class="text-muted">Updated on December 5,-->
-          <!--                  2020</small></p></div>-->
-          <!--            </div>-->
-          <!--          </div>-->
-          <!--          <div class="col-md-6">-->
-          <!--            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">-->
-          <!--              <div class="card-body"><h5 class="card-title">Monopoly </h5>-->
-          <!--                <p class="card-text">Monopoly clone in OCaml </p><a-->
-          <!--                  href="https://github.com/alanli2001/Monopoly/archive/master.zip"-->
-          <!--                  class="btn btn-outline-secondary mr-3"><i class="fab fa-github"></i> Clone Project</a><a-->
-          <!--                  href="https://github.com/alanli2001/Monopoly" target=" _blank" class="btn btn-outline-secondary"><i-->
-          <!--                  class="fab fa-github"></i> Repo</a>-->
-          <!--                <hr>-->
-          <!--                <div class="pb-3">Languages: <a class="badge badge-light card-link"-->
-          <!--                                                href="https://github.com/alanli2001/Monopoly/search?l=OCaml"-->
-          <!--                                                target=" _blank">OCaml: 98.1 %</a><a class="badge badge-light card-link"-->
-          <!--                                                                                     href="https://github.com/alanli2001/Monopoly/search?l=Shell"-->
-          <!--                                                                                     target=" _blank">Shell: 1.2 %</a><a-->
-          <!--                  class="badge badge-light card-link" href="https://github.com/alanli2001/Monopoly/search?l=Makefile"-->
-          <!--                  target=" _blank">Makefile: 0.5 %</a></div>-->
-          <!--                <p class="card-text"><a href="https://github.com/alanli2001/Monopoly/stargazers" target=" _blank"-->
-          <!--                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><i-->
-          <!--                  class="fab fa-github"></i> Stars <span class="badge badge-dark">0</span></span></a><small-->
-          <!--                  class="text-muted">Updated on December 30, 2020</small></p></div>-->
-          <!--            </div>-->
-          <!--          </div>-->
+
+          <div class="col-md-6">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+              <div class="card-body"><h3 class="card-title">dynamic-halftone-particles</h3>
+                <p class="card-text">CS 126 - Software Design Studio Final Project</p><a
+                  href="https://github.com/kgukevin/dynamic-halftone-particles/archive/refs/heads/main.zip"
+                  class="btn btn-outline-secondary mr-3">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+                  Clone Project</a><a href="https://github.com/kgukevin/dynamic-halftone-particles"
+                                      target=" _blank" class="btn btn-outline-secondary">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+                  Repo</a>
+                <hr>
+                <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                href="https://github.com/kgukevin/dynamic-halftone-particles/search?l=c%2B%2B"
+                                                target=" _blank">C++: 96.2 %</a><a
+                  class="badge badge-light card-link" href="https://github.com/kgukevin/dynamic-halftone-particles/search?l=cmake"
+                  target=" _blank">CMake: 3.8 %</a></div>
+                <p class="card-text"><a href="https://github.com/kgukevin/dynamic-halftone-particles/stargazers" target=" _blank"
+                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
+                  [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                  class="text-muted">Updated on March 19, 2021</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+              <div class="card-body"><h3 class="card-title">kevingu</h3>
+                <p class="card-text">Personal Website </p><a
+                  href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
+                  class="btn btn-outline-secondary mr-3">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+                  Clone Project</a><a href="https://github.com/kgukevin/kevingu"
+                                      target=" _blank" class="btn btn-outline-secondary">
+                  <fa-icon [icon]="faGithub"></fa-icon>
+                  Repo</a>
+                <hr>
+                <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                href="https://github.com/kgukevin/kevingu/search?l=css"
+                                                target=" _blank">CSS: 63.0 %</a><a
+                  class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
+                  target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
+                                                            href="https://github.com/kgukevin/kevingu/search?l=html"
+                                                            target=" _blank">HTML: 16.0 %</a></div>
+                <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
+                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
+                  [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                  class="text-muted">Updated on June 4, 2021</small></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -223,6 +238,7 @@
     <!--    </p>-->
   </div>
   <div #gall id="gallery" class="gallery section">
+    <h1>oh, the sights i've seen</h1>
     <!--    <p>-->
     <!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
     <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
@@ -230,11 +246,13 @@
     <!--    </p>-->
     <div class="row">
       <div class="column">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+        <h2>banff</h2>
+        <img src="assets/mountains.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+        <h2>mountains</h2>
         <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
         <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
       </div>
