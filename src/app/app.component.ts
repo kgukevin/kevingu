@@ -20,6 +20,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('gall') gallElement: ElementRef;
 
   public titleFade = 0;
+  public bgColor = 'white';
   public scrollPoint: number = null;
   public currentActive = 0;
   public homeOffset: number = null;

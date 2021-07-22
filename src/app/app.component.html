@@ -1,7 +1,6 @@
 <div class="sidenav" style="transform: translateX(-100%);"
      [ngStyle]="{'opacity': titleFade, 'transform': 'translateX('+20*titleFade+'%)'}">
   <div class="container vert-center">
-    <!--    <h1> KEVIN GU </h1>-->
     <h2>
       <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
     </h2>
@@ -9,7 +8,7 @@
       <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 3}">interests </a>
     </h2>
     <h2>
-      <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 4}"> engineer </a>
+      <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 4}"> engineering </a>
     </h2>
     <h2>
       <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
@@ -20,23 +19,30 @@
   </div>
 </div>
 
-<main class="app">
-  <div [ngStyle]="{'opacity': 1-titleFade}"> <!-- set class="bg-gradient" for gradient -->
+<!--<div style="position: fixed; transform: translateX(100%); right: -10vw; bottom: 0" [ngStyle]="{'opacity': titleFade, 'transform': 'translateX(-'+20*titleFade+'%) rotate(90deg)'}" >-->
+<!--  <h3>-->
+<!--    all rivers run into the sea -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--    The sea can accommodate hundreds of rivers of water.-->
+<!--  </h3>-->
+<!--</div>-->
+
+<main class="app" style="width: 100vw">
+<!--  <div > &lt;!&ndash; set class="bg-gradient" for gradient &ndash;&gt;-->
     <!--    <div id="stars"></div>-->
-    <div #home id="first" class="home section" style="transform: translateX(-25vw); text-align: center; width: 100vw">
+    <div #home id="first" class="home" [ngStyle]="{'opacity': 1-titleFade}" style="width: 100vw; text-align: center; ">
 
       <div style="height: 100vh">
-        <div class="topnav" style="margin-top: 2vh; width: 100vw">
+        <div class="topnav" style="padding-top: 2vh; width: 100vw">
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#about">about</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#interests">interests</a></h2>
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineer</a></h2>
+          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineering</a></h2>
           <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#portfolio">portfolio</a></h2>
           <h2 style="display: inline-block; padding-left: 0;"><a href="#gallery">gallery</a></h2>
         </div>
         <!--        <div style="">-->
         <div class="vert-center" style="width: 100%">
           <div style="text-align: center">
-            <h1>kevin <b style="color: orange">gu</b></h1>
+            <h1>kevin <b style="color: #F05945">gu</b></h1>
           </div>
 
           <div style="max-width: fit-content; margin: auto">
@@ -55,82 +61,138 @@
       </div>
     </div>
 
-  </div>
+<!--  </div>-->
 
   <div #about id="about" class="about section horiz-scroll">
     <!--    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
     <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
     <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-    <div style="height: 100vh">
-      <div class="vert-center" style="margin-right: 10vw">
-        <h1 style="margin-bottom: .5em">who's kevin?</h1>
-        <h2>
-          My parents named me Kevin after becoming a fan of actor Kevin Costner
-          from watching the film adaptation of Dances with the Wolves.
-        </h2>
-        <h2>
-          As a native to the suburbs of Northern Virginia,
-          I grew up in close proximity to humbling natural landscapes and fantastic cityscapes.
-        </h2>
-        <h2>
-          From being allowed to explore the outdoors on my own at a young age,
-          I developed a deep appreciation of nature.
-        </h2>
-        <h2>
-          Being Chinese-American I had the opportunity to experience two cultures and expand my worldview.
-        </h2>
-        <h2>
-          I am an extremely curious person.
-        </h2>
-        <h2>
+    <div style=" background: #5EAAA8; transform: skewY(-12deg); border-radius: 1em">
+      <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius: 1em">
+        <div style="min-height:100vh; padding-left: 5vw; background: linear-gradient(to right, #F05945 0%, #F05945 10%); transform: skewY(3deg); border-radius: 1em">
+          <div class="" style="padding-bottom: 20vh; overflow:auto; margin-right: 5vw; transform: skewY(6deg);">
 
-        </h2>
-        <!--        <div [ngClass]="{'rw-words': currentActive === 2, 'rw-words-empty': currentActive !== 2}" style="width: 50vw">-->
-        <!--          <h2>by now, you probably already know a kevin. most likely a <b-->
-        <!--            style="color: orange">few</b>.-->
-        <!--          </h2>-->
-        <!--          <h2>here's a few <b-->
-        <!--            style="color: orange">fun facts</b> about this one.-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            i can get interested in almost anything.-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            i have an obsession with <b style="color: orange">bikes</b> and their mechanics.-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            my favorite show is <b style="color: orange">Yellowstone</b>.-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            sometimes, i take some cool photos - mostly with my iPhone-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            i love doing yardwork, landscaping, and home improvement.-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            i am having a hard time finding time to practice violin.-->
-        <!--          </h2>-->
-        <!--          <h2>-->
-        <!--            <b style="color: orange">"Good News"</b> by Mac Miller is my favorite bop.-->
-        <!--          </h2>-->
+            <h1 style="margin-top: 15vh; color: #F7F3E9">who's kevin?</h1>
 
-        <!--          <h2>-->
-        <!--            learn more by <b style="color: orange">scrolling down</b></h2>-->
-        <!--          <h2>-->
+            <table style="margin-top: 0; margin-bottom: 5vh; width:100%; padding: 0 3em 3em 3em;">
+              <tr>
+                <th></th>
+                <th class="shadow-lg" style="background-color: #2f2f2f; height: 50vh; transform: rotate(-7deg); border-radius: 2em;">
+                  <h2 style="font-size: 2.5em; color: #F7F3E9">
+                    kevin
+                  </h2>
+                  <p style="color: #F7F3E9">
+                    / KEV-in /<br>
+                    proper noun<br>
+                  </p>
+                  <p style="color: #F7F3E9">
+                    Kevin Costner was the main character <br>
+                    of the 1990 film Dances with Wolves. <br>
+                    In 2001, my parents named their first born after him <br>
+                    hoping that he would develop the same <br>
+                    down-to-earth, sensitive, individualist <br>
+                    Costner was so well known for.
+                  </p>
+                </th>
+                <th class="shadow-lg" style="background-color: #F7F3E9; height: 50vh; transform: rotate(5deg) translateY(10%); border-radius: 2em">
+                  <h2 style="font-size: 2.5em">
+                    gu (顾)
+                  </h2>
+                  <p style="">
+                    / goo /<br>
+                    surname<br>
+                  </p>
+                  <p>
+                    In Chinese, 顾 means "to care for". <br>
+                    As a kid I was self-conscious about <br>
+                    my last name as it spawned <br>
+                    nicknames like "googoo". <br>
+                    but when I realized they came out of affection <br>
+                    and not derogatory, I stopped caring. <br>
+                    My last name is quite a literal reminder to <br>
+                    remember what is important and to judge <br>
+                    both sides of the coin <br>
+                    - things I should care for <br>
+                    things I don't need to care for.
+                  </p>
+                </th>
+                <th></th>
+              </tr>
+<!--              <tr>-->
+<!--                <td></td>-->
+<!--                <td></td>-->
+<!--                <td></td>-->
+<!--                <td></td>-->
+<!--              </tr>-->
+            </table>
 
-        <!--          </h2>-->
-        <!--        </div>-->
+            <h2 style="color: #F7F3E9">
+              As a youn<b style="color: #A3D2CA">g</b> adult in a time where eve<b style="color: #A3D2CA">r</b>ything
+              chang<b style="color: #A3D2CA">e</b>s so fast, I am still grappling with how to answ<b
+              style="color: #A3D2CA">e</b>r this ques<b style="color: #A3D2CA">t</b>ion.
+              There are a few th<b style="color: #A3D2CA">i</b>ngs I know and/or found out about myself, a<b
+              style="color: #A3D2CA">n</b>d I highli<b style="color: #A3D2CA">g</b>hted some on thi<b
+              style="color: #A3D2CA">s</b> page.
+
+              <!--          Kevin Costner was the main character of the 1990 film Dances with Wolves and in 2001, his performance was apparently captivating enough that my parents named their first child after him.-->
+              <!--          In addition to his name, I aspire to inherit-->
+            </h2>
+
+
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
 
-  <div #int id="interests" class="interests section">
-    <div style="height: 100vh">
-      <div class="vert-center" style="margin-right: 10vw">
-        <h1>things i like</h1>
-        <h2>for better or for worse, my innate curiosity means i can get interested in anything that catches my
-          eye.</h2>
+  <div #int id="interests" class="interests section" style="margin-top: 20vh">
+    <div style="min-height:100vh; padding-left: 5vw">
+      <div class="" style="margin-right: 5vw">
+        <h1 style="margin-top: 4em">things i like</h1>
+        <h2>In no particular order:</h2>
+        <table style="width: 100%">
+          <tr>
+            <th>
+              swimming
+            </th>
+            <th>
+              biking
+            </th>
+            <th>
+              hiking
+            </th>
+            <th>
+              tinkering
+            </th>
+            <th>
+              drawing
+            </th>
+            <th>
+              yardwork
+            </th>
+            <th>
+              movies/tv
+            </th>
+          </tr>
+        </table>
+<!--        <h2>-->
+<!--          swimming-->
+<!--        </h2>-->
+<!--        <h2>-->
+<!--          biking-->
+<!--        </h2>-->
+<!--        <h2>-->
+<!--          hiking-->
+<!--        </h2>-->
+<!--        <h2>-->
+<!--          tinkering-->
+<!--        </h2>-->
+<!--        <h2>-->
+<!--          yardwork-->
+<!--        </h2>-->
+<!--        <h2>-->
+<!--          movies/tv-->
+<!--        </h2>-->
         <!--    <p>-->
         <!--      interests. | offset: {{ intOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
         <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
@@ -139,149 +201,168 @@
       </div>
     </div>
   </div>
+
   <div #eng id="engineer" class="engineer section">
+    <div style=" background: #5EAAA8; transform: skewY(-12deg); border-radius: 1em">
+      <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius: 1em">
+        <div style="min-height:100vh; padding-left: 5vw; background: linear-gradient(to right, #F05945 0%, #F05945 10%); transform: skewY(3deg); border-radius: 1em">
+          <div class="" style="padding-bottom: 20vh; overflow:auto; margin-right: 5vw; transform: skewY(6deg);">
     <p>
       engineer. | offset: {{ engOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
       .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
       .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
     </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div #port id="portfolio" class="portfolio section">
-    <h1>recent projects</h1>
-    <div class="git-container" style="display: block">
-      <div style="margin-right: 10vw">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-              <div class="card-body"><h3 class="card-title">kevingu</h3>
-                <p class="card-text">Personal Website </p><a
-                  href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
-                  class="btn btn-outline-secondary mr-3">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  Clone Project</a><a href="https://github.com/kgukevin/kevingu"
-                                      target=" _blank" class="btn btn-outline-secondary">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  Repo</a>
-                <hr>
-                <div class="pb-3">Languages: <a class="badge badge-light card-link"
-                                                href="https://github.com/kgukevin/kevingu/search?l=css"
-                                                target=" _blank">CSS: 63.0 %</a><a
-                  class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
-                  target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
-                                                            href="https://github.com/kgukevin/kevingu/search?l=html"
-                                                            target=" _blank">HTML: 16.0 %</a></div>
-                <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
-                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
-                  [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
-                  class="text-muted">Updated on June 4, 2021</small></p>
+    <div style=" padding-left: 5vw">
+      <div style="margin-right: 5vw">
+        <h1>recent projects</h1>
+        <div class="git-container" style="display: block">
+          <div style="margin-right: 10vw">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+                  <div class="card-body"><h3 class="card-title">kevingu</h3>
+                    <p class="card-text">Personal Website </p><a
+                      href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
+                      class="btn btn-outline-secondary mr-3">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Clone Project</a><a href="https://github.com/kgukevin/kevingu"
+                                          target=" _blank" class="btn btn-outline-secondary">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Repo</a>
+                    <hr>
+                    <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                    href="https://github.com/kgukevin/kevingu/search?l=css"
+                                                    target=" _blank">CSS: 63.0 %</a><a
+                      class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
+                      target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
+                                                                href="https://github.com/kgukevin/kevingu/search?l=html"
+                                                                target=" _blank">HTML: 16.0 %</a></div>
+                    <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
+                                            class="text-dark text-decoration-none"><span
+                      class="text-dark card-link mr-4"><fa-icon
+                      [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                      class="text-muted">Updated on June 4, 2021</small></p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-              <div class="card-body"><h3 class="card-title">dynamic-halftone-particles</h3>
-                <p class="card-text">CS 126 - Software Design Studio Final Project</p><a
-                  href="https://github.com/kgukevin/dynamic-halftone-particles/archive/refs/heads/main.zip"
-                  class="btn btn-outline-secondary mr-3">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  Clone Project</a><a href="https://github.com/kgukevin/dynamic-halftone-particles"
-                                      target=" _blank" class="btn btn-outline-secondary">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  Repo</a>
-                <hr>
-                <div class="pb-3">Languages: <a class="badge badge-light card-link"
-                                                href="https://github.com/kgukevin/dynamic-halftone-particles/search?l=c%2B%2B"
-                                                target=" _blank">C++: 96.2 %</a><a
-                  class="badge badge-light card-link" href="https://github.com/kgukevin/dynamic-halftone-particles/search?l=cmake"
-                  target=" _blank">CMake: 3.8 %</a></div>
-                <p class="card-text"><a href="https://github.com/kgukevin/dynamic-halftone-particles/stargazers" target=" _blank"
-                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
-                  [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
-                  class="text-muted">Updated on March 19, 2021</small></p>
+              <div class="col-md-6">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+                  <div class="card-body"><h3 class="card-title">dynamic-halftone-particles</h3>
+                    <p class="card-text">CS 126 - Software Design Studio Final Project</p><a
+                      href="https://github.com/kgukevin/dynamic-halftone-particles/archive/refs/heads/main.zip"
+                      class="btn btn-outline-secondary mr-3">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Clone Project</a><a href="https://github.com/kgukevin/dynamic-halftone-particles"
+                                          target=" _blank" class="btn btn-outline-secondary">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Repo</a>
+                    <hr>
+                    <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                    href="https://github.com/kgukevin/dynamic-halftone-particles/search?l=c%2B%2B"
+                                                    target=" _blank">C++: 96.2 %</a><a
+                      class="badge badge-light card-link"
+                      href="https://github.com/kgukevin/dynamic-halftone-particles/search?l=cmake"
+                      target=" _blank">CMake: 3.8 %</a></div>
+                    <p class="card-text"><a href="https://github.com/kgukevin/dynamic-halftone-particles/stargazers"
+                                            target=" _blank"
+                                            class="text-dark text-decoration-none"><span
+                      class="text-dark card-link mr-4"><fa-icon
+                      [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                      class="text-muted">Updated on March 19, 2021</small></p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-              <div class="card-body"><h3 class="card-title">kevingu</h3>
-                <p class="card-text">Personal Website </p><a
-                  href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
-                  class="btn btn-outline-secondary mr-3">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  Clone Project</a><a href="https://github.com/kgukevin/kevingu"
-                                      target=" _blank" class="btn btn-outline-secondary">
-                  <fa-icon [icon]="faGithub"></fa-icon>
-                  Repo</a>
-                <hr>
-                <div class="pb-3">Languages: <a class="badge badge-light card-link"
-                                                href="https://github.com/kgukevin/kevingu/search?l=css"
-                                                target=" _blank">CSS: 63.0 %</a><a
-                  class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
-                  target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
-                                                            href="https://github.com/kgukevin/kevingu/search?l=html"
-                                                            target=" _blank">HTML: 16.0 %</a></div>
-                <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
-                                        class="text-dark text-decoration-none"><span class="text-dark card-link mr-4"><fa-icon
-                  [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
-                  class="text-muted">Updated on June 4, 2021</small></p>
+              <div class="col-md-6">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+                  <div class="card-body"><h3 class="card-title">kevingu</h3>
+                    <p class="card-text">Personal Website </p><a
+                      href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
+                      class="btn btn-outline-secondary mr-3">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Clone Project</a><a href="https://github.com/kgukevin/kevingu"
+                                          target=" _blank" class="btn btn-outline-secondary">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Repo</a>
+                    <hr>
+                    <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                    href="https://github.com/kgukevin/kevingu/search?l=css"
+                                                    target=" _blank">CSS: 63.0 %</a><a
+                      class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
+                      target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
+                                                                href="https://github.com/kgukevin/kevingu/search?l=html"
+                                                                target=" _blank">HTML: 16.0 %</a></div>
+                    <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
+                                            class="text-dark text-decoration-none"><span
+                      class="text-dark card-link mr-4"><fa-icon
+                      [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                      class="text-muted">Updated on June 4, 2021</small></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--    <p>-->
-    <!--      portfolio. | offset: {{ portOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-    <!--    </p>-->
+
   </div>
+
+
   <div #gall id="gallery" class="gallery section">
-    <h1>oh, the sights i've seen</h1>
-    <!--    <p>-->
-    <!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-    <!--    </p>-->
-    <div class="row" style="margin-right: 10vw">
-      <div class="column">
-        <h2>banff</h2>
-        <img src="assets/mountains.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-        <h2>mountains</h2>
-        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-        <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+    <div style=" padding-left: 5vw">
+      <div style="margin-right: 5vw">
+        <h1>oh, the sights i've seen</h1>
+        <!--    <p>-->
+        <!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
+        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
+        <!--    </p>-->
+        <div class="row" style="margin-right: 10vw">
+          <div class="column">
+            <h2>banff</h2>
+            <img src="assets/mountains.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+            <h2>mountains</h2>
+            <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
+            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
 </main>
