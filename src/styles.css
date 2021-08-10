@@ -26,11 +26,44 @@ h1 {
 h2 {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  font-size: 7vh;
+  color: #2f2f2f;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  color: #484848;
+  text-decoration: none;
+  font-size: 5vh;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
   color: #484848;
   text-decoration: none;
   font-size: 3.5vh;
 }
 
+p {
+  font-size: 2.5vh;
+}
+
 * {
   text-decoration: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+iframe {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -1,21 +1,21 @@
 <div class="sidenav" style="transform: translateX(-100%);"
      [ngStyle]="{'opacity': titleFade, 'transform': 'translateX('+20*titleFade+'%)'}">
   <div class="container vert-center">
-    <h2>
+    <h4>
       <a href="#about" (click)="print()" [ngClass]="{'active': currentActive === 2}"> about </a>
-    </h2>
-    <h2>
-      <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 3}">interests </a>
-    </h2>
-    <h2>
+    </h4>
+    <h4>
+      <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 3}">portfolio</a>
+    </h4>
+    <h4>
       <a href="#engineer" (click)="print()" [ngClass]="{'active': currentActive === 4}"> engineering </a>
-    </h2>
-    <h2>
-      <a href="#portfolio" (click)="print()" [ngClass]="{'active': currentActive === 5}">portfolio</a>
-    </h2>
-    <h2>
+    </h4>
+    <h4>
+      <a href="#interests" (click)="print()" [ngClass]="{'active': currentActive === 5}">leisure </a>
+    </h4>
+    <h4>
       <a href="#gallery" (click)="print()" [ngClass]="{'active': currentActive === 6}">gallery</a>
-    </h2>
+    </h4>
   </div>
 </div>
 
@@ -27,207 +27,287 @@
 <!--</div>-->
 
 <main class="app" style="width: 100vw">
-<!--  <div > &lt;!&ndash; set class="bg-gradient" for gradient &ndash;&gt;-->
-    <!--    <div id="stars"></div>-->
-    <div #home id="first" class="home" [ngStyle]="{'opacity': 1-titleFade}" style="width: 100vw; text-align: center; ">
+  <!--  <div > &lt;!&ndash; set class="bg-gradient" for gradient &ndash;&gt;-->
+  <!--    <div id="stars"></div>-->
+  <div #home id="first" class="home" [ngStyle]="{'opacity': 1-titleFade}" style="width: 100vw; text-align: center; ">
 
-      <div style="height: 100vh">
-        <div class="topnav" style="padding-top: 2vh; width: 100vw">
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#about">about</a></h2>
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#interests">interests</a></h2>
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineering</a></h2>
-          <h2 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#portfolio">portfolio</a></h2>
-          <h2 style="display: inline-block; padding-left: 0;"><a href="#gallery">gallery</a></h2>
-        </div>
-        <!--        <div style="">-->
-        <div class="vert-center" style="width: 100%">
-          <div style="text-align: center">
-            <h1>kevin <b style="color: #F05945">gu</b></h1>
-          </div>
-
-          <div style="max-width: fit-content; margin: auto">
-            <div class="typewriter" style=" text-align: center; width: 100%">
-              <h2>student | athlete | computer scientist | engineer</h2>
-            </div>
-          </div>
-        </div>
-        <!--        </div>-->
-
-        <!--        <img class="portrait" src="assets/portrait.png"-->
-        <!--             style="height: 90vh; width: auto; position: absolute; bottom: 0; right: 0; margin-right: 5vw;"-->
-        <!--             alt="headshot of a strapping young man">-->
-
-
+    <div style="height: 100vh">
+      <div class="topnav" style="padding-top: 2vh; width: 100vw">
+        <h4 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#about">about</a></h4>
+        <h4 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#portfolio">portfolio</a></h4>
+        <h4 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#engineer">engineering</a></h4>
+        <h4 style="display: inline-block; padding-left: 0; padding-right: 6vw"><a href="#interests">leisure</a></h4>
+        <h4 style="display: inline-block; padding-left: 0;"><a href="#gallery">gallery</a></h4>
       </div>
-    </div>
+      <!--        <div style="">-->
+      <div class="vert-center" style="width: 100%">
+        <div style="text-align: center">
+          <h1>kevin <b style="color: #F05945">gu</b></h1>
+        </div>
 
-<!--  </div>-->
-
-  <div #about id="about" class="about section horiz-scroll">
-    <!--    about. | offset: {{ aboutOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-    <!--    .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-    <div style=" background: #5EAAA8; transform: skewY(-12deg); border-radius: 1em">
-      <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius: 1em">
-        <div style="min-height:100vh; padding-left: 5vw; background: linear-gradient(to right, #F05945 0%, #F05945 10%); transform: skewY(3deg); border-radius: 1em">
-          <div class="" style="padding-bottom: 20vh; overflow:auto; margin-right: 5vw; transform: skewY(6deg);">
-
-            <h1 style="margin-top: 15vh; color: #F7F3E9">who's kevin?</h1>
-
-            <table style="margin-top: 0; margin-bottom: 5vh; width:100%; padding: 0 3em 3em 3em;">
-              <tr>
-                <th></th>
-                <th class="shadow-lg" style="background-color: #2f2f2f; height: 50vh; transform: rotate(-7deg); border-radius: 2em;">
-                  <h2 style="font-size: 2.5em; color: #F7F3E9">
-                    kevin
-                  </h2>
-                  <p style="color: #F7F3E9">
-                    / KEV-in /<br>
-                    proper noun<br>
-                  </p>
-                  <p style="color: #F7F3E9">
-                    Kevin Costner was the main character <br>
-                    of the 1990 film Dances with Wolves. <br>
-                    In 2001, my parents named their first born after him <br>
-                    hoping that he would develop the same <br>
-                    down-to-earth, sensitive, individualist <br>
-                    Costner was so well known for.
-                  </p>
-                </th>
-                <th class="shadow-lg" style="background-color: #F7F3E9; height: 50vh; transform: rotate(5deg) translateY(10%); border-radius: 2em">
-                  <h2 style="font-size: 2.5em">
-                    gu (顾)
-                  </h2>
-                  <p style="">
-                    / goo /<br>
-                    surname<br>
-                  </p>
-                  <p>
-                    In Chinese, 顾 means "to care for". <br>
-                    As a kid I was self-conscious about <br>
-                    my last name as it spawned <br>
-                    nicknames like "googoo". <br>
-                    but when I realized they came out of affection <br>
-                    and not derogatory, I stopped caring. <br>
-                    My last name is quite a literal reminder to <br>
-                    remember what is important and to judge <br>
-                    both sides of the coin <br>
-                    - things I should care for <br>
-                    things I don't need to care for.
-                  </p>
-                </th>
-                <th></th>
-              </tr>
-<!--              <tr>-->
-<!--                <td></td>-->
-<!--                <td></td>-->
-<!--                <td></td>-->
-<!--                <td></td>-->
-<!--              </tr>-->
-            </table>
-
-            <h2 style="color: #F7F3E9">
-              As a youn<b style="color: #A3D2CA">g</b> adult in a time where eve<b style="color: #A3D2CA">r</b>ything
-              chang<b style="color: #A3D2CA">e</b>s so fast, I am still grappling with how to answ<b
-              style="color: #A3D2CA">e</b>r this ques<b style="color: #A3D2CA">t</b>ion.
-              There are a few th<b style="color: #A3D2CA">i</b>ngs I know and/or found out about myself, a<b
-              style="color: #A3D2CA">n</b>d I highli<b style="color: #A3D2CA">g</b>hted some on thi<b
-              style="color: #A3D2CA">s</b> page.
-
-              <!--          Kevin Costner was the main character of the 1990 film Dances with Wolves and in 2001, his performance was apparently captivating enough that my parents named their first child after him.-->
-              <!--          In addition to his name, I aspire to inherit-->
-            </h2>
-
-
+        <div style="max-width: fit-content; margin: auto">
+          <div class="typewriter" style=" text-align: center; width: 100%">
+            <h4>student | athlete | computer scientist | engineer</h4>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div #int id="interests" class="interests section" style="margin-top: 20vh">
-    <div style="min-height:100vh; padding-left: 5vw">
-      <div class="" style="margin-right: 5vw">
-        <h1 style="margin-top: 4em">things i like</h1>
-        <h2>In no particular order:</h2>
-        <table style="width: 100%">
+  <div #about id="about" class="about section horiz-scroll">
+    <!--    about. | offset: {{ aboutOffset }}  -->
+    <div style="z-index:-1;width: inherit; position: absolute;">
+      <div style="background: #5EAAA8; transform: skewY(-12deg); border-radius:1em .5em; "
+           [ngStyle]="{'transform': 'skewY(-'+12*(1-titleFade)+'deg)'}">
+        <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius:1em .7em"
+             [ngStyle]="{'transform': 'skewY('+3*(1-titleFade)+'deg)'}">
+          <div
+            style="min-height:50vh; padding-left: 5vw; background: #f05945; transform: skewY(3deg); border-radius: 1em"
+            [ngStyle]="{'transform': 'skewY('+3*(1-titleFade)+'deg)'}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="min-height:100vh; padding-left: 5vw;background: #F05945; border-radius: 1em; transform: skewY(0deg)">
+
+      <div class="" style="padding-bottom: 10vh; padding-top: 10vh; margin-right: 5vw; transform: skewY(0deg)"
+           [ngStyle]="{'opacity': titleFade}">
+        <div
+          style="background:url('assets/about/pngfind.com-ocean-wave-png-363188.png') no-repeat; background-size: 150vh; border-radius: 1em; padding-bottom: 10vh; -webkit-mask-image:-webkit-gradient(linear, left 95%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));">
+          <h1 style="color: #F7F3E9;margin-top: 7vh;"><br>just a<br> computer science major<br> trying to <br>catch a
+            wave.</h1>
+          <div style="padding-left: 0vw">
+            <h2 style="color: #F7F3E9;">
+              <!--                Greetings, that's me!-->
+              -----------
+
+            </h2>
+            <!--              <h3 style="color: #F7F3E9;">-->
+            <!--                I'm currently a student at: <br>-->
+            <!--                University of Illinois Urbana-Champaign.-->
+            <!--              </h3>-->
+          </div>
+        </div>
+        <div style="z-index: -1; margin-left: 40vw; transform: translateY(-115%); position:absolute;">
+          <img src="../assets/about/portrait.png"
+               style="height:75vh; -webkit-mask-image:-webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));">
+        </div>
+
+        <!--            <table style="margin-top: 15vh; margin-bottom: 6vh; width:100%; padding: 0 0em 5em 0em; text-align: left">-->
+        <!--              <tr>-->
+        <!--                <th class="shadow-lg" style="background-color: #2f2f2f; height: 55vh; transform: rotate(-5deg); border-radius: 1em;">-->
+        <!--                  <div style="padding: 0em 2em">-->
+        <!--                  <h2 style="font-size: 7vh; color: #F7F3E9;">-->
+        <!--                    kevin-->
+        <!--                  </h2>-->
+        <!--                  <p style="color: #F7F3E9; font-size: 1.2em">-->
+        <!--                    / KEV-in /<br>-->
+        <!--                    proper noun<br>-->
+        <!--                  </p>-->
+        <!--                  <p style="color: #F7F3E9; text-align: left; font-size: 1.2em">-->
+        <!--&lt;!&ndash;                    1. Kevin Costner was the main character&ndash;&gt;-->
+        <!--&lt;!&ndash;                    of the 1990 film Dances with Wolves.&ndash;&gt;-->
+        <!--&lt;!&ndash;                    In 2001, my parents named their first born after him&ndash;&gt;-->
+        <!--&lt;!&ndash;                    hoping that he would develop the same&ndash;&gt;-->
+        <!--&lt;!&ndash;                    down-to-earth, sensitive, individualist personality&ndash;&gt;-->
+        <!--&lt;!&ndash;                    Costner was so well known for.&ndash;&gt;-->
+        <!--                    1. An individual with the aspiration of becoming a full time engineer.-->
+        <!--                    Beyond a career, this individual hopes to be a positive force to those around him.-->
+        <!--                  </p>-->
+        <!--                  </div>-->
+        <!--                </th>-->
+        <!--                <th class="shadow-lg" style="background-color: #F7F3E9; height: 50vh; transform: rotate(3deg) translateY(10%); border-radius: 1em">-->
+        <!--                  <div style="padding: 0em 2em;">-->
+        <!--                  <h2 style="font-size: 7vh;">-->
+        <!--                    gu (顾)-->
+        <!--                  </h2>-->
+        <!--                  <p style="font-size: 1.2em">-->
+        <!--                    / goo /<br>-->
+        <!--                    surname<br>-->
+        <!--                  </p>-->
+        <!--                  <p style="text-align: left; font-size: 1.2em">-->
+        <!--                    1. Originating from the Xia Dynasty, there are four thousand of years of history to this surname.-->
+
+        <!--&lt;!&ndash;                    As a kid I was self-conscious about <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    my last name as it spawned <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    nicknames like "googoo". <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    but when I realized they came out of affection <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    and not derogatory, I stopped caring. <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    My last name is quite a literal reminder to <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    remember what is important and to judge <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    both sides of the coin <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    - things I should care for <br>&ndash;&gt;-->
+        <!--&lt;!&ndash;                    things I don't need to care for.&ndash;&gt;-->
+        <!--                  </p>-->
+        <!--                  </div>-->
+        <!--                </th>-->
+        <!--              </tr>-->
+        <!--&lt;!&ndash;              <tr>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <td></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <td></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <td></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <td></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;              </tr>&ndash;&gt;-->
+        <!--            </table>-->
+        <div class="dict-card shadow-lg">
+          <h2 style="margin-bottom: 0">
+            kevin gu
+            <!--              With so many field that computer science extends into, whether inherent of multidisciplinary, I have yet to decide on a direction.-->
+            <!--              I have academic experience in artificial intelligence, parallel computing, and general software engineering.-->
+            <!--              I am also a self-learning web development and cloud computing.-->
+
+            <!--              As a young adult in a time where everything-->
+            <!--              changes so fast, I am still grappling with how to answer this question.-->
+            <!--              There are a few things I know and/or found out about myself, and I highlighted some on this page.-->
+
+            <!--          Kevin Costner was the main character of the 1990 film Dances with Wolves and in 2001, his performance was apparently captivating enough that my parents named their first child after him.-->
+            <!--          In addition to his name, I aspire to inherit-->
+          </h2>
+          <h4 style="padding-top: 0">
+            /KEV-in goo/ <br>
+            noun
+          </h4>
+          <h4>
+            ----------------------
+          </h4>
+          <h4>
+            1. a student at the University of Illinois Urbana-Champaign.
+            <!--            I'm a computer science major at the University of Illinois Urbana-Champaign.-->
+            <!--            At the U of I, I am learning the skills I would need to embark on my next endeavor.-->
+          </h4>
+
+          <h4>
+            2. an individual with academic experience in artificial intelligence, parallel computing, and general
+            software engineering.
+          </h4>
+
+          <h4>
+            3. an avid self-learner currently engrossed in cloud-computing and web-development.
+          </h4>
+
+          <h4>
+            4. someone searching for the next opportunity to apply his skills, whether it be in research, freelancing,
+            interning, or working.
+          </h4>
+
+          <!--          <h4 style="font-size: 4vh">-->
+          <!--            <br>Origin: <br> -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+          <!--          </h4>-->
+
+          <!--          <h4>-->
+          <!--            In 2001, my parents named their first born child after Kevin Costner hoping that their son would develop the same down-to-earth, sensitive, individualist personality that Costner was so well known for.-->
+          <!--            The surname "Gu" (顾) comes from the Xia Dynasty and has over four thousand years of history.-->
+          <!--          </h4>-->
+
+          <a class="resume-link" href="assets/about/kevin-gu-resume.pdf" target="_blank">
+            <div style=" color: inherit">
+              <fa-icon [icon]="faFile"></fa-icon>
+              <b> &ensp; resume</b>
+            </div>
+          </a>
+        </div>
+
+        <h3 style="color: #F7F3E9; margin-top: 10vh">Skills:</h3>
+        <table #skills class="skills">
           <tr>
             <th>
-              swimming
+              <div>
+                <h4>Python</h4>
+                <div class="bar">
+                  <div class="progress" style="width: 90%;">
+                    <div [ngClass]="{'filled': skillActive === true}"></div>
+                  </div>
+                </div>
+              </div>
             </th>
             <th>
-              biking
+              <div>
+                <h4>Java</h4>
+                <div class="bar">
+                  <div class="progress" style="width: 80%;">
+                    <div [ngClass]="{'filled': skillActive === true}"></div>
+                  </div>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <div>
+                <h4>C/C++</h4>
+                <div class="bar">
+                  <div class="progress" style="width: 80%;">
+                    <div [ngClass]="{'filled': skillActive === true}"></div>
+                  </div>
+                </div>
+              </div>
             </th>
             <th>
-              hiking
+              <div>
+                <h4>HTML/CSS</h4>
+                <div class="bar">
+                  <div class="progress" style="width: 85%;">
+                    <div [ngClass]="{'filled': skillActive === true}"></div>
+                  </div>
+                </div>
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <div>
+                <h4>MATLAB</h4>
+                <div class="bar">
+                  <div class="progress" style="width: 20%;">
+                    <div [ngClass]="{'filled': skillActive === true}"></div>
+                  </div>
+                </div>
+              </div>
             </th>
             <th>
-              tinkering
-            </th>
-            <th>
-              drawing
-            </th>
-            <th>
-              yardwork
-            </th>
-            <th>
-              movies/tv
+              <div>
+                <h4>Angular11</h4>
+                <div class="bar">
+                  <div class="progress" style="width: 55%;">
+                    <div [ngClass]="{'filled': skillActive === true}"></div>
+                  </div>
+                </div>
+              </div>
             </th>
           </tr>
         </table>
-<!--        <h2>-->
-<!--          swimming-->
-<!--        </h2>-->
-<!--        <h2>-->
-<!--          biking-->
-<!--        </h2>-->
-<!--        <h2>-->
-<!--          hiking-->
-<!--        </h2>-->
-<!--        <h2>-->
-<!--          tinkering-->
-<!--        </h2>-->
-<!--        <h2>-->
-<!--          yardwork-->
-<!--        </h2>-->
-<!--        <h2>-->
-<!--          movies/tv-->
-<!--        </h2>-->
-        <!--    <p>-->
-        <!--      interests. | offset: {{ intOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-        <!--    </p>-->
+
+
       </div>
     </div>
-  </div>
 
-  <div #eng id="engineer" class="engineer section">
-    <div style=" background: #5EAAA8; transform: skewY(-12deg); border-radius: 1em">
-      <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius: 1em">
-        <div style="min-height:100vh; padding-left: 5vw; background: linear-gradient(to right, #F05945 0%, #F05945 10%); transform: skewY(3deg); border-radius: 1em">
-          <div class="" style="padding-bottom: 20vh; overflow:auto; margin-right: 5vw; transform: skewY(6deg);">
-    <p>
-      engineer. | offset: {{ engOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
-    </p>
+    <div style="transform: translateY(-100%); z-index:-1;width: inherit; position: absolute;">
+      <div style="background: #5EAAA8; transform: skewY(-12deg); border-radius:1em .5em; "
+           [ngStyle]="{'transform': 'skewY(-'+12*(aboutFade)+'deg)'}">
+        <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius:1em .7em"
+             [ngStyle]="{'transform': 'skewY('+3*(aboutFade)+'deg)'}">
+          <div
+            style="min-height:50vh; padding-left: 5vw; background: #f05945; transform: skewY(3deg); border-radius: 1em"
+            [ngStyle]="{'transform': 'skewY('+3*(aboutFade)+'deg)'}">
           </div>
         </div>
       </div>
     </div>
+
   </div>
+
   <div #port id="portfolio" class="portfolio section">
-    <div style=" padding-left: 5vw">
-      <div style="margin-right: 5vw">
+    <div style=" padding-left: 5vw" [ngStyle]="{'opacity': aboutFade}">
+      <div style="padding-top: 15vh; padding-bottom: 20vh; margin-right: 0vw">
         <h1>recent projects</h1>
+        <h3 style="margin-bottom: 1em"> Projects on github:</h3>
         <div class="git-container" style="display: block">
-          <div style="margin-right: 10vw">
+          <div style="margin-right: 5vw">
             <div class="row">
               <div class="col-md-6">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-                  <div class="card-body"><h3 class="card-title">kevingu</h3>
-                    <p class="card-text">Personal Website </p><a
+                  <div class="card-body"><h4 class="card-title">kevingu</h4>
+                    <p class="card-text">personal website </p><a
                       href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
                       class="btn btn-outline-secondary mr-3">
                       <fa-icon [icon]="faGithub"></fa-icon>
@@ -254,7 +334,35 @@
 
               <div class="col-md-6">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-                  <div class="card-body"><h3 class="card-title">dynamic-halftone-particles</h3>
+                  <div class="card-body"><h4 class="card-title">kgukevin.github.io</h4>
+                    <p class="card-text">host for my personal website</p><a
+                      href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
+                      class="btn btn-outline-secondary mr-3">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Clone Project</a><a href="https://github.com/kgukevin/kgukevin.github.io"
+                                          target=" _blank" class="btn btn-outline-secondary">
+                      <fa-icon [icon]="faGithub"></fa-icon>
+                      Repo</a>
+                    <hr>
+                    <div class="pb-3">Languages: <a class="badge badge-light card-link"
+                                                    href="https://github.com/kgukevin/kevingu/search?l=css"
+                                                    target=" _blank">CSS: 63.0 %</a><a
+                      class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
+                      target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
+                                                                href="https://github.com/kgukevin/kevingu/search?l=html"
+                                                                target=" _blank">HTML: 16.0 %</a></div>
+                    <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
+                                            class="text-dark text-decoration-none"><span
+                      class="text-dark card-link mr-4"><fa-icon
+                      [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
+                      class="text-muted">Updated on June 4, 2021</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
+                  <div class="card-body"><h4 class="card-title">dynamic-halftone-particles</h4>
                     <p class="card-text">CS 126 - Software Design Studio Final Project</p><a
                       href="https://github.com/kgukevin/dynamic-halftone-particles/archive/refs/heads/main.zip"
                       class="btn btn-outline-secondary mr-3">
@@ -279,34 +387,237 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="card shadow-lg p-3 mb-5 bg-white rounded card">
-                  <div class="card-body"><h3 class="card-title">kevingu</h3>
-                    <p class="card-text">Personal Website </p><a
-                      href="https://github.com/kgukevin/kevingu/archive/refs/heads/master.zip"
+                  <div class="card-body"><h4 class="card-title">tjhsst</h4>
+                    <p class="card-text">my academic projects from high school (2016-2020)</p><a
+                      href="https://github.com/kgukevin/tjhsst/archive/refs/heads/main.zip"
                       class="btn btn-outline-secondary mr-3">
                       <fa-icon [icon]="faGithub"></fa-icon>
-                      Clone Project</a><a href="https://github.com/kgukevin/kevingu"
+                      Clone Project</a><a href="https://github.com/kgukevin/tjhsst"
                                           target=" _blank" class="btn btn-outline-secondary">
                       <fa-icon [icon]="faGithub"></fa-icon>
                       Repo</a>
                     <hr>
                     <div class="pb-3">Languages: <a class="badge badge-light card-link"
-                                                    href="https://github.com/kgukevin/kevingu/search?l=css"
-                                                    target=" _blank">CSS: 63.0 %</a><a
-                      class="badge badge-light card-link" href="https://github.com/kgukevin/kevingu/search?l=typescript"
-                      target=" _blank">TypeScript: 17.5 %</a><a class="badge badge-light card-link"
-                                                                href="https://github.com/kgukevin/kevingu/search?l=html"
-                                                                target=" _blank">HTML: 16.0 %</a></div>
-                    <p class="card-text"><a href="https://github.com/kgukevin/kevingu/stargazers" target=" _blank"
+                                                    href="https://github.com/kgukevin/tjhsst/search?l=python"
+                                                    target=" _blank">Python: 99.7 %</a><a
+                      class="badge badge-light card-link">Other: 0.3 %</a></div>
+                    <p class="card-text"><a href="https://github.com/kgukevin/tjhsst/stargazers"
+                                            target=" _blank"
                                             class="text-dark text-decoration-none"><span
                       class="text-dark card-link mr-4"><fa-icon
                       [icon]="faGithub"></fa-icon> Stars <span class="badge badge-dark">0</span></span></a><small
-                      class="text-muted">Updated on June 4, 2021</small></p>
+                      class="text-muted">Updated on April 18, 2021</small></p>
                   </div>
                 </div>
               </div>
+
             </div>
+          </div>
+        </div>
+
+        <h3 style="margin-bottom: 1em"> Papers I've written:</h3>
+        <!--        <div style="width: 50%; height: 50vh; ">-->
+        <!--          <iframe-->
+        <!--            src="assets/portfolio/comp_neuro_final.pdf"-->
+        <!--            height="100%"-->
+        <!--            width="100%" style="border-radius: 1em; padding: 1em"-->
+        <!--          ></iframe>-->
+        <!--        </div>-->
+        <div class="git-container" style="display: block">
+          <div style="margin-right: 5vw">
+            <div class="row">
+
+              <div class="col-md-6" style="border-width: 0;">
+                <a class="card shadow-lg p-3 mb-5 bg-white rounded card" href="assets/portfolio/comp_neuro_final.pdf"
+                   target="_blank" style="border-width: 0">
+                  <div class="card-body" style="padding-bottom: 0; border-width: 0">
+                    <img src='assets/portfolio/comp_neuro_thumbnail-min.PNG' style="width: 100%">
+                  </div>
+                  <div
+                    style="min-height: 6em; background-color: #f8f9fa; border-radius: 0 0 .25rem .25rem; padding: 1.25rem">
+                    <h4>TJHSST Neuroscience Senior Research Lab</h4>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-6" style="border-width: 0">
+                <a class="card shadow-lg p-3 mb-5 bg-white rounded card" href="assets/portfolio/IBET_MFC_final.pdf"
+                   target="_blank" style="border-width: 0">
+                  <div class="card-body" style="padding-bottom: 0; border-width: 0">
+                    <img src='assets/portfolio/IBET_MFC_thumbnail-min.PNG' style="width: 100%">
+                  </div>
+                  <div
+                    style="min-height: 6em; background-color: #f8f9fa; border-radius: 0 0 .25rem .25rem; padding: 1.25rem">
+                    <h4>TJHSST Freshman IBET + tjStar</h4>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-md-6" style="border-width: 0">
+                <a class="card shadow-lg p-3 mb-5 bg-white rounded card" href="assets/portfolio/IBET_DSSC_final.pdf"
+                   target="_blank" style="border-width: 0">
+                  <div class="card-body" style="padding-bottom: 0; border-width: 0">
+                    <img src='assets/portfolio/IBET_DSSC_thumbnail-min.PNG' style="width: 100%">
+                  </div>
+                  <div
+                    style="min-height: 6em; background-color: #f8f9fa; border-radius: 0 0 .25rem .25rem; padding: 1.25rem">
+                    <h4>TJHSST Freshman mini-IBET</h4>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div #eng id="engineer" class="engineer section">
+    <div style="z-index:-1;width: inherit; position: absolute;">
+      <div style="background: #5EAAA8; transform: skewY(-12deg); border-radius:1em .5em; "
+           [ngStyle]="{'transform': 'skewY(-'+12*(1-portFade)+'deg)'}">
+        <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius:1em .7em"
+             [ngStyle]="{'transform': 'skewY('+3*(1-portFade)+'deg)'}">
+          <div
+            style="min-height:50vh; padding-left: 5vw; background: #f05945; transform: skewY(3deg); border-radius: 1em"
+            [ngStyle]="{'transform': 'skewY('+3*(1-portFade)+'deg)'}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="min-height:100vh; padding-left: 5vw;background: #F05945; border-radius: 1em; transform: skewY(0deg)">
+
+      <div class="" style="padding-bottom: 10vh; padding-top: 10vh; margin-right: 5vw; transform: skewY(0deg)"
+           [ngStyle]="{'opacity': titleFade}">
+        <div
+          style=" background-image: url('assets/engineering/pngfind.com-wave-pattern-png-4645790.png'); background-size: 100vh; border-radius: 1em; padding-bottom: 10vh; -webkit-mask-image:-webkit-gradient(linear, left 95%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));">
+          <h1 style="color: #F7F3E9;margin-top: 7vh"><br>i was<br>born <br>to be an <br>engineer<br></h1>
+          <div style="padding-left: 0vw">
+            <h2 style="color: #F7F3E9; padding-bottom: 0em">
+              <!--                Greetings, that's me!-->
+              -----------
+
+            </h2>
+
+          </div>
+        </div>
+        <div style="z-index: 0; margin-left: 25vw; transform: translateY(-115%); position:absolute;">
+          <img src="../assets/engineering/eng_portrait.png"
+               style="border-radius: 1em; height:55vh; -webkit-mask-image:-webkit-gradient(linear, left 85%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));">
+        </div>
+
+        <!--        <div class="dict-card shadow-lg">-->
+        <!--          <h2 style="margin-bottom: 0">-->
+        <!--            engineering-->
+        <!--            &lt;!&ndash;              With so many field that computer science extends into, whether inherent of multidisciplinary, I have yet to decide on a direction.&ndash;&gt;-->
+        <!--            &lt;!&ndash;              I have academic experience in artificial intelligence, parallel computing, and general software engineering.&ndash;&gt;-->
+        <!--            &lt;!&ndash;              I am also a self-learning web development and cloud computing.&ndash;&gt;-->
+
+        <!--            &lt;!&ndash;              As a young adult in a time where everything&ndash;&gt;-->
+        <!--            &lt;!&ndash;              changes so fast, I am still grappling with how to answer this question.&ndash;&gt;-->
+        <!--            &lt;!&ndash;              There are a few things I know and/or found out about myself, and I highlighted some on this page.&ndash;&gt;-->
+
+        <!--            &lt;!&ndash;          Kevin Costner was the main character of the 1990 film Dances with Wolves and in 2001, his performance was apparently captivating enough that my parents named their first child after him.&ndash;&gt;-->
+        <!--            &lt;!&ndash;          In addition to his name, I aspire to inherit&ndash;&gt;-->
+        <!--          </h2>-->
+        <!--          <h4 style="padding-top: 0">-->
+        <!--            /en-juh-nee-rihng/ <br>-->
+        <!--            noun-->
+        <!--          </h4>-->
+        <!--          <h4>-->
+        <!--            &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        <!--          </h4>-->
+        <!--          <h4>-->
+        <!--            1. the profession in which knowledge of mathematics and natural sciences are put to practical use.-->
+        <!--          </h4>-->
+
+        <!--          <h4>-->
+        <!--            2. the act of solving problems society often doesn't even know they have.-->
+        <!--          </h4>-->
+
+        <!--          <h4>-->
+        <!--            3. an occupation where people get excited over the small details of how things work.-->
+        <!--          </h4>-->
+
+        <!--&lt;!&ndash;          <h4>&ndash;&gt;-->
+        <!--&lt;!&ndash;            4. someone searching for the next opportunity to apply his skills, whether it be in research, freelancing, interning, or working.&ndash;&gt;-->
+        <!--&lt;!&ndash;          </h4>&ndash;&gt;-->
+
+        <!--          <h4 style="font-size: 4vh">-->
+        <!--            <br>Origin: <br> -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        <!--          </h4>-->
+
+        <!--          <h4>-->
+        <!--            According to Wikipedia, "the term engineering is derived from the Latin ingenium, meaning "cleverness" and ingeniare, meaning "to contrive, devise".-->
+        <!--          </h4>-->
+
+        <!--&lt;!&ndash;          <a class="resume-link" href="assets/about/kevin-gu-resume.pdf" target="_blank">&ndash;&gt;-->
+        <!--&lt;!&ndash;            <div  style=" color: inherit">&ndash;&gt;-->
+        <!--&lt;!&ndash;              <fa-icon [icon]="faFile"></fa-icon> <b> &ensp; resume</b>&ndash;&gt;-->
+        <!--&lt;!&ndash;            </div>&ndash;&gt;-->
+        <!--&lt;!&ndash;          </a>&ndash;&gt;-->
+        <!--        </div>-->
+
+
+        <h3 style="color: #F7F3E9;">
+          how it started for me
+        </h3>
+
+        <h4>
+          Like many others, my journey to becoming an engineer has a cliche Lego origin story. I too spent countless
+          hours flipping through instruction manuals to build what was pictured on a box. The feeling of satisfaction
+          after a build is hard to match, but the real magic happened after I got bored playing with the original
+          design.
+          <br>
+          According to Wikipedia, “the term engineering is derived from the Latin ingenium, meaning “cleverness” and
+          ingeniare, meaning “to contrive, devise”. After I exhausted the novelty in a Lego set, I disassembled it and
+          used the pieces to translate my own imagination into something tactile, ultimately incubating an engineering
+          spirit that would persist for the rest of my life.
+        </h4>
+
+<!--        <h3 style="color: #F7F3E9;">-->
+<!--          i like to build things-->
+<!--        </h3>-->
+
+<!--        <h4>-->
+<!--          For engineers, the concept of building something is fundamental to their love for the field.-->
+<!--          Like many others, my love for building things has a cliche Lego origin story.-->
+<!--          My infatuation for the plastic bricks came from being able to transform my imagination into something tactile,-->
+<!--          and build something with my bare hands.-->
+
+
+<!--          I am currently a computer science major, but my passion for software is quite a recent development.-->
+<!--          My engineering origin story has a cliche Lego beginning.-->
+<!--          What's probably different was that my infatuation for the plastic bricks wasn't so much for the-->
+
+<!--          Like many engineers, my love for building things has a cliche Lego origin story.-->
+<!--          Although I cannot remember the first Lego set I ever got, I do remember and cherish the many hours surrounded-->
+<!--          by plastic bricks that fueled my imagination.-->
+<!--          Lego's and their NXT kits introduced me to the world of robotics, and my-->
+<!--        </h4>-->
+        <h2 style="color: #F7F3E9;">
+
+        </h2>
+
+
+      </div>
+    </div>
+
+    <div style="transform: translateY(-100%); z-index:-1;width: inherit; position: absolute;">
+      <div style="background: #5EAAA8; transform: skewY(-12deg); border-radius:1em .5em; "
+           [ngStyle]="{'transform': 'skewY(-'+12*(engFade)+'deg)'}">
+        <div style=" background: #A3D2CA; transform: skewY(3deg); border-radius:1em .7em"
+             [ngStyle]="{'transform': 'skewY('+3*(engFade)+'deg)'}">
+          <div
+            style="min-height:50vh; padding-left: 5vw; background: #f05945; transform: skewY(3deg); border-radius: 1em"
+            [ngStyle]="{'transform': 'skewY('+3*(engFade)+'deg)'}">
           </div>
         </div>
       </div>
@@ -314,54 +625,121 @@
 
   </div>
 
+  <div #int id="interests" class="interests section">
+    <div style="min-height:100vh; padding-left: 5vw" [ngStyle]="{'opacity': engFade}">
+      <div class="" style="padding-top: 15vh; padding-bottom: 10vh; margin-right: 5vw">
+        <h1 style="">things i like to do</h1>
+        <!--        <h3>In no particular order:</h3>-->
+
+        <div class="CSSgal" style="margin-top: 0">
+
+          <!-- Don't wrap targets in parent -->
+          <s id="s1"></s>
+          <s id="s2"></s>
+          <s id="s3"></s>
+          <s id="s4"></s>
+
+          <div class="slider">
+            <div class="slide">
+              <div class="content" style="background-image: url('/assets/interests/M1200048.jpg');">
+                <h1 style="transform: translateY(0%) translateX(-15vh);">Jump in <br> and <br>lose <br>yourself</h1>
+              </div>
+            </div>
+            <div class="slide">
+              <h2>Coming Soon!</h2>
+              <!--              <div class="content" style="background-image: url('/assets/interests/IMG_1747_Kevin G4.jfif')">-->
+              <!--                <h2 style="">-->
+              <!--                  This is where it all began:<br>-->
+              <!--                  at my first ever swim meet. <br>-->
+              <!--                  In middle school, <br>-->
+              <!--                  I joined Dragon Swim Team <br>-->
+              <!--                  and never looked back.-->
+              <!--                </h2>-->
+              <!--              </div>-->
+            </div>
+            <div class="slide">
+              <h2>Coming Soon!</h2>
+              <!--              <div class="content" style="background-image: url('/assets/interests/M1030118.jpg')">-->
+              <!--                <h2 style="">-->
+              <!--                  In high school, swimming-->
+              <!--                  let me become a part of an-->
+              <!--                  amazing group of peers and-->
+              <!--                  through four years we-->
+              <!--                </h2>-->
+              <!--              </div>-->
+            </div>
+            <div class="slide">
+              <h2>Coming Soon!</h2>
+              <!--              <div class="content" style="background-image: url('/assets/interests/tjsd.jpg')">-->
+              <!--                <h2 style=""><br>tjsd is love. tjsd is life.</h2>-->
+              <!--              </div>-->
+            </div>
+          </div>
+
+          <div class="prevNext">
+            <div><a href="#s2"></a></div>
+            <div><a href="#s3"></a></div>
+            <div><a href="#s4"></a></div>
+            <div><a href="#s1"></a></div>
+          </div>
+
+          <div class="bullets">
+            <a href="#s1"></a>
+            <a href="#s2"></a>
+            <a href="#s3"></a>
+            <a href="#s4"></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 
   <div #gall id="gallery" class="gallery section">
     <div style=" padding-left: 5vw">
       <div style="margin-right: 5vw">
-        <h1>oh, the sights i've seen</h1>
-        <!--    <p>-->
-        <!--      gallery. | offset: {{ gallOffset }}<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>-->
-        <!--      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.-->
-        <!--    </p>-->
-        <div class="row" style="margin-right: 10vw">
-          <div class="column">
-            <h2>banff</h2>
-            <img src="assets/mountains.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-            <h2>mountains</h2>
-            <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/falls2.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/nature.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/mist.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/paris.jpg" style="width:100%">
-          </div>
-          <div class="column">
-            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/ocean.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/wedding.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/mountainskies.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/rocks.jpg" style="width:100%">
-            <img src="https://www.w3schools.com/w3images/underwater.jpg" style="width:100%">
-          </div>
-        </div>
+        <h1>photos i've taken</h1>
+        <h2>Coming Soon!</h2>
+<!--        <div class="row" style="margin-right: 0vw">-->
+<!--          <div class="column">-->
+<!--            <h3>banff</h3>-->
+<!--            <img src="assets/mountains.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/rocks.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/falls2.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/paris.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/nature.jpg">-->
+<!--            <h3>mountains</h3>-->
+<!--            <img src="https://www.w3schools.com/w3images/mist.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/paris.jpg">-->
+<!--          </div>-->
+<!--          <div class="column">-->
+<!--            <img src="https://www.w3schools.com/w3images/underwater.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/ocean.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/wedding.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/mountainskies.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/rocks.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/underwater.jpg">-->
+<!--          </div>-->
+<!--          <div class="column">-->
+<!--            <img src="https://www.w3schools.com/w3images/wedding.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/rocks.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/falls2.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/paris.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/nature.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/mist.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/paris.jpg">-->
+<!--          </div>-->
+<!--          <div class="column">-->
+<!--            <img src="https://www.w3schools.com/w3images/underwater.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/ocean.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/wedding.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/mountainskies.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/rocks.jpg">-->
+<!--            <img src="https://www.w3schools.com/w3images/underwater.jpg">-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </div>
   </div>
