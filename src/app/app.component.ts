@@ -61,13 +61,13 @@ export class AppComponent implements AfterViewInit {
     this.scrnHeight = window.innerHeight;
     this.scrnWidth = window.innerWidth;
 
-    this.homeOffset = this.homeElement.nativeElement.offsetTop - 100;
+    this.homeOffset = this.homeElement.nativeElement.offsetTop;
     this.aboutOffset = this.aboutElement.nativeElement.offsetTop;
     this.skillOffset = this.skillElement.nativeElement.offsetTop - 400;
-    this.intOffset = this.intElement.nativeElement.offsetTop - 100;
+    this.intOffset = this.intElement.nativeElement.offsetTop;
     this.engOffset = this.engElement.nativeElement.offsetTop;
     this.portOffset = this.portElement.nativeElement.offsetTop;
-    this.gallOffset = this.gallElement.nativeElement.offsetTop - 100;
+    this.gallOffset = this.gallElement.nativeElement.offsetTop;
   }
 
   @HostListener('contextmenu', ['$event'])
@@ -77,20 +77,20 @@ export class AppComponent implements AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   checkOffsetTop(): void {
-    if (window.pageYOffset >= this.homeOffset && window.pageYOffset <= this.aboutOffset) {
+    if (window.pageYOffset >= this.homeOffset && window.pageYOffset < this.aboutOffset) {
       this.currentActive = 1;
-    } else if (window.pageYOffset > this.aboutOffset && window.pageYOffset < this.portOffset) {
+    } else if (window.pageYOffset >= this.aboutOffset && window.pageYOffset < this.portOffset - 100) {
       this.currentActive = 2;
       if (window.pageYOffset >= this.skillOffset) {
         this.skillActive = true;
       }
-    } else if (window.pageYOffset >= this.portOffset && window.pageYOffset < this.engOffset) {
+    } else if (window.pageYOffset >= this.portOffset - 100 && window.pageYOffset < this.engOffset - 100) {
       this.currentActive = 3;
-    } else if (window.pageYOffset >= this.engOffset && window.pageYOffset < this.intOffset) {
+    } else if (window.pageYOffset >= this.engOffset - 100 && window.pageYOffset < this.intOffset - 100) {
       this.currentActive = 4;
-    } else if (window.pageYOffset >= this.intOffset && window.pageYOffset < this.gallOffset) {
+    } else if (window.pageYOffset >= this.intOffset - 100 && window.pageYOffset < this.gallOffset - 100) {
       this.currentActive = 5;
-    } else if (window.pageYOffset >= this.gallOffset) {
+    } else if (window.pageYOffset >= this.gallOffset - 100) {
       this.currentActive = 6;
     } else {
       this.currentActive = 0;
