@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { LazyLoadImageModule} from 'ng-lazyload-image';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -12,7 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    // AngularFontAwesomeModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

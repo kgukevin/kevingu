@@ -5,9 +5,9 @@ html {
   width: 100vw;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+/*::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
 
 body {
   margin: 0;

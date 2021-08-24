@@ -233,10 +233,16 @@ body {
   padding: 0 4px;
 }
 
-.column img {
+.column img[_ng-lazy] {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.column img.ng-lazyloaded[_ng-lazy] {
+  opacity: 1;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
